@@ -1,0 +1,19 @@
+db:
+  # 数据库服务器地址端口
+  hostname: localhost
+  port: 5432
+
+  # 数据库用户名密码
+  username: postgres
+  password: 123456
+
+  # 数据库名
+  dbName: postgres
+  sslMode: disable
+
+jwt:
+  # jwt密钥
+  secretKey: mySecret
+
+  # jwt有效期
+  expiresDuration: 240h

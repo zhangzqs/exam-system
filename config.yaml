@@ -8,12 +8,16 @@ db:
   password: 123456
 
   # 数据库名
-  dbName: postgres
-  sslMode: disable
+  db-name: postgres
+  ssl-mode: disable
 
 jwt:
   # jwt密钥
-  secretKey: mySecret
+  secret-key: mySecret
 
   # jwt有效期
-  expiresDuration: 240h
+  expires-duration: 240h
+
+server:
+  listen-ip: 0.0.0.0
+  listen-port: 8080

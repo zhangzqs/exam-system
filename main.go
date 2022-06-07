@@ -1,12 +1,23 @@
 package main
 
 import (
+	"fmt"
 	"github.com/gin-gonic/gin"
 	"github.com/zhangzqs/exam-system/controller"
+	"github.com/zhangzqs/exam-system/global"
+	"log"
 )
 
 func main() {
+	conf := global.GetConfig()
 	r := gin.Default()
 	controller.InitRouter(r)
-	r.Run() // 监听并在 0.0.0.0:8080 上启动服务
+	err := r.Run(fmt.Sprintf(
+		"%s:%d",
+		conf.Server.ListenIp,
+		conf.Server.ListenPort,
+	))
+	if err != nil {
+		log.Fatalln(err)
+	}
 }

@@ -13,17 +13,22 @@ type DatabaseConfig struct {
 	Username string `yaml:"username"`
 	Password string `yaml:"password"`
 	Port     int    `yaml:"port"`
-	DbName   string `yaml:"dbName"`
-	SslMode  string `yaml:"sslMode"`
+	DbName   string `yaml:"db-name"`
+	SslMode  string `yaml:"ssl-mode"`
 }
 
 type JwtConfig struct {
-	SecretKey       string        `yaml:"secretKey"`
-	ExpiresDuration time.Duration `yaml:"expiresDuration"`
+	SecretKey       string        `yaml:"secret-key"`
+	ExpiresDuration time.Duration `yaml:"expires-duration"`
+}
+type ServerConfig struct {
+	ListenIp   string `yaml:"listen-ip"`
+	ListenPort int    `yaml:"listen-port"`
 }
 type Config struct {
-	Db  DatabaseConfig `json:"db"`
-	Jwt JwtConfig      `json:"jwt"`
+	Db     DatabaseConfig `yaml:"db"`
+	Jwt    JwtConfig      `yaml:"jwt"`
+	Server ServerConfig   `yaml:"server"`
 }
 
 var (

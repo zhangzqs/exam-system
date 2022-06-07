@@ -26,7 +26,8 @@ func GetDatabase() *sql.DB {
 			conf.Db.DbName,
 			conf.Db.SslMode,
 		)
-		db, err := sql.Open("postgres", connStr)
+		var err error
+		db, err = sql.Open("postgres", connStr)
 		if err != nil {
 			log.Fatalln(err)
 		}

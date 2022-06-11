@@ -1,0 +1,43 @@
+@startuml
+left to right direction
+
+:出卷人: as testMaker
+
+(管理题库) as manageQuestion
+testMaker --> manageQuestion
+
+manageQuestion <.. (增加题目): <<extends>>
+manageQuestion <.. (删除题目): <<extends>>
+manageQuestion <.. (修改题目): <<extends>>
+manageQuestion <.. (查询题目): <<extends>>
+
+(管理试卷) as managePaper
+testMaker --> managePaper
+
+managePaper <.. (生成试卷): <<extends>>
+managePaper <.. (调整试卷): <<extends>>
+
+(管理考试) as manageTest
+testMaker --> manageTest
+
+(安排考试) as makeTest
+(批改试卷) as markPaper
+
+manageTest <.. makeTest: <<extends>>
+manageTest <.. markPaper: <<extends>>
+
+makeTest ..> (填写参与考试的考生用户名列表): <<includes>>
+makeTest ..> (填写考试信息): <<includes>>
+makeTest ..> (选择一张试卷): <<includes>>
+
+markPaper ..> (生成成绩): <<includes>>
+markPaper <-- (发放成绩): <<extends>>
+(发放成绩) <-- (填写考试评语): <<extends>>
+
+:考生: as testActor
+
+testActor --> (登录系统)
+testActor --> (进入考试)
+testActor --> (提交试卷)
+
+@enduml

@@ -1,0 +1,59 @@
+
+@startuml 登陆注册
+autonumber
+actor 用户 as user
+participant 浏览器 as browser
+participant 服务器 as server
+database 数据库 as db
+user -> browser++: 输入用户名，点击注册
+browser -> server++: POST /register \n {username,password}
+    server -> db++: 判定用户名密码\n是否合法、是否存在
+    return 返回判定结果
+    server -> db: 插入新用户信息
+return jwt字符串
+
+user -> browser++: 输入用户名，点击登录
+browser -> server++: POST /login \n {username,password}
+    server -> db++: 验证username与password是否对应
+    return 返回验证结果
+    server -> server: 创建jwt字符串
+return jwt字符串
+
+user -> browser: 进行需要登录的操作
+browser -> server++: 发送请求且header携带jwt字符串
+server -> server: 检查jwt是否合法，解析用户uid
+server -> server: 进行业务逻辑处理
+return 返回响应
+@enduml
+
+@startuml 增加题目
+autonumber
+actor 用户 as user
+participant 浏览器 as browser
+participant 服务器 as server
+database 数据库 as db
+
+user -> browser: 确保已登录
+user -> browser++: 增加题目
+    browser -> server++: POST /questions \n 题目
+        server -> db++: 题目
+        return 题目id
+
+    return 题目id
+@enduml
+
+@startuml 删除题目
+autonumber
+actor 用户 as user
+participant 浏览器 as browser
+participant 服务器 as server
+database 数据库 as db
+
+user -> browser: 确保已登录
+user -> browser++: 删除题目
+    browser -> server++: DELETE /questions/:id \n 题目
+        server -> db++: 删除题目
+        return 删除结果
+
+    return 删除结果
+@enduml

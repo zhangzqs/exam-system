@@ -1,4 +1,4 @@
-package main
+package db
 
 import (
 	"database/sql"
@@ -15,11 +15,13 @@ func main() {
 	if err := db.Ping(); err != nil {
 		log.Fatal(err)
 	}
-	//_, err = db.Exec("INSERT INTO \"users\"(username,password) VALUES ($1,$2);", "zzq12", "sit")
-	//if err != nil {
-	//	log.Fatalln(err)
-	//}
-	rows, err := db.Query("SELECT * FROM users")
+	// 插入数据
+	_, err = db.Exec("INSERT INTO users(username,password) VALUES ($1,$2);", "zzq12", "sit")
+	if err != nil {
+		log.Fatalln(err)
+	}
+	// 查询数据
+	rows, err := db.Query("SELECT username, password FROM users")
 	if err != nil {
 		log.Fatalln(err)
 	}

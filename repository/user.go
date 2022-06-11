@@ -33,7 +33,7 @@ func UserValid(username string, password string) (uid int, err error) {
 		}
 		return uid, nil
 	}
-	return -1, errors.New("用户名或密码不存在")
+	return -1, errors.New("用户名或密码有误")
 }
 
 // UserInsert 注册用户

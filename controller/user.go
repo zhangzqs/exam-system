@@ -5,41 +5,41 @@ import (
 	"github.com/zhangzqs/exam-system/service"
 )
 
-type requestBody struct {
+type loginRequestBody struct {
 	Username string `json:"username" binding:"required"`
 	Password string `json:"password" binding:"required"`
 }
 
-type responseBody struct {
+type loginResponseBody struct {
 	JwtToken string `json:"jwtToken"`
 }
 
 func Login(c *gin.Context) {
-	var rb requestBody
+	var rb loginRequestBody
 	err := c.BindJSON(&rb)
 	if err != nil {
-		UnknownErrorApiResponse(c, err.Error())
+		RequestFormatError(c)
 		return
 	}
 	token, err := service.Login(rb.Username, rb.Password)
 	if err != nil {
-		UnknownErrorApiResponse(c, err.Error())
+		LoginError(c)
 		return
 	}
-	SuccessfulApiResponse(c, token)
+	SuccessfulApiResponse(c, loginResponseBody{token})
 }
 
 func Register(c *gin.Context) {
-	var rb requestBody
+	var rb loginRequestBody
 	err := c.BindJSON(&rb)
 	if err != nil {
-		UnknownErrorApiResponse(c, err.Error())
+		RequestFormatError(c)
 		return
 	}
 	token, err := service.Register(rb.Username, rb.Password)
 	if err != nil {
-		UnknownErrorApiResponse(c, err.Error())
+		RegisterUserExistsError(c)
 		return
 	}
-	SuccessfulApiResponse(c, token)
+	SuccessfulApiResponse(c, loginResponseBody{token})
 }

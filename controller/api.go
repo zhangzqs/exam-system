@@ -3,19 +3,19 @@ package controller
 import "github.com/gin-gonic/gin"
 
 func errorApiResponse(c *gin.Context, errorCode int, errorMsg string) {
-	r := ApiResponse{
+	c.JSON(200, ApiResponse{
 		Code: errorCode,
 		Msg:  errorMsg,
 		Data: nil,
-	}
-	c.JSON(200, r)
+	})
 }
 
 const (
-	SuccessfulCode = iota
-	RequestFormatErrorCode
-	LoginErrorCode
-	RegisterUserExistsErrorCode
+	SuccessfulCode              = 0
+	RequestFormatErrorCode      = 1
+	RequestContentErrorCode     = 2
+	LoginErrorCode              = 3
+	RegisterUserExistsErrorCode = 4
 )
 
 type ApiResponse struct {
@@ -25,16 +25,20 @@ type ApiResponse struct {
 }
 
 func SuccessfulApiResponse(c *gin.Context, data any) {
-	r := ApiResponse{
+	c.JSON(200, ApiResponse{
 		Code: SuccessfulCode,
 		Msg:  "Successful",
 		Data: data,
-	}
-	c.JSON(200, r)
+	})
 }
 
 func RequestFormatError(c *gin.Context) {
 	errorApiResponse(c, RequestFormatErrorCode, "请求格式有误")
+}
+
+func RequestContentError(c *gin.Context, msg string) {
+	errorApiResponse(c, RequestContentErrorCode, "请求内容有误："+msg)
+
 }
 
 func LoginError(c *gin.Context) {

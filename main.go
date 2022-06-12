@@ -9,6 +9,7 @@ import (
 )
 
 func main() {
+	gin.SetMode(gin.DebugMode)
 	conf := global.GetConfig()
 	r := gin.Default()
 	controller.InitRouter(r)

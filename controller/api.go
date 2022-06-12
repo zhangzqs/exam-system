@@ -16,6 +16,8 @@ const (
 	RequestContentErrorCode     = 2
 	LoginErrorCode              = 3
 	RegisterUserExistsErrorCode = 4
+	OperationNeedLoginErrorCode = 5
+	TokenInvalidErrorCode       = 6
 )
 
 type ApiResponse struct {
@@ -47,4 +49,12 @@ func LoginError(c *gin.Context) {
 
 func RegisterUserExistsError(c *gin.Context) {
 	errorApiResponse(c, RegisterUserExistsErrorCode, "待注册用户已存在")
+}
+
+func OperationNeedLoginError(c *gin.Context) {
+	errorApiResponse(c, OperationNeedLoginErrorCode, "该操作需要登录")
+}
+
+func TokenInvalidError(c *gin.Context) {
+	errorApiResponse(c, TokenInvalidErrorCode, "Token已失效，请重新登录")
 }

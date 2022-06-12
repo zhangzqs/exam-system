@@ -19,7 +19,7 @@ type addQuestionResponseBody struct {
 }
 
 func AddQuestion(c *gin.Context) {
-	uid := GetUid(c)
+	//uid := GetUid(c)
 	var qr addQuestionRequestBody
 	err := c.BindJSON(&qr)
 	if err != nil {
@@ -27,31 +27,34 @@ func AddQuestion(c *gin.Context) {
 		return
 	}
 
-	switch qr.Type {
-	case "single":
-		SuccessfulApiResponse(c, addQuestionResponseBody{
-			Id: service.AddSingleQuestion(uid, qr.Title, qr.Options, qr.Answer.(int)),
-		})
-		return
-	case "multiple":
-		SuccessfulApiResponse(c, addQuestionResponseBody{
-			Id: service.AddMultipleQuestion(uid, qr.Title, qr.Options, qr.Answer.([]int)),
-		})
-		return
-	case "fill":
-		SuccessfulApiResponse(c, addQuestionResponseBody{
-			Id: service.AddFillQuestion(uid, qr.Title, qr.Answer.([]string)),
-		})
-		return
-	case "judge":
-		SuccessfulApiResponse(c, addQuestionResponseBody{
-			Id: service.AddJudgeQuestion(uid, qr.Title, qr.Answer.(bool)),
-		})
-		return
-
-	default:
-		RequestContentError(c, "题目类型错误："+qr.Type)
-	}
+	//switch qr.Type {
+	//case "single":
+	//	SuccessfulApiResponse(c, addQuestionResponseBody{
+	//		Id: service.AddSingleQuestion(uid, &service.SingleQuestion{
+	//			Title: qr.Title, Options: qr.Options, Answer: qr.Answer.(int),
+	//		}),
+	//	})
+	//	return
+	//case "multiple":
+	//	SuccessfulApiResponse(c, addQuestionResponseBody{
+	//		Id: service.AddMultipleQuestion(uid, qr.Title, qr.Options, qr.Answer.([]int)),
+	//	})
+	//	return
+	//case "fill":
+	//	SuccessfulApiResponse(c, addQuestionResponseBody{
+	//		Id: service.AddFillQuestion(uid, qr.Title, qr.Answer.([]string)),
+	//	})
+	//	return
+	//case "judge":
+	//	SuccessfulApiResponse(c, addQuestionResponseBody{
+	//		Id: service.AddJudgeQuestion(uid, qr.Title, qr.Answer.(bool)),
+	//	})
+	//	return
+	//
+	//default:
+	//	RequestContentError(c, "题目类型错误："+qr.Type)
+	//}
+	RequestContentError(c, "题目类型错误："+qr.Type)
 }
 func DeleteQuestion(c *gin.Context) {
 	idStr, _ := c.Params.Get("id")

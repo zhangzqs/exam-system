@@ -4,6 +4,8 @@ CREATE TABLE users
     username TEXT UNIQUE NOT NULL,
     password TEXT        NOT NULL
 );
+
+-- 题目类型
 CREATE TYPE QuestionType as ENUM('single','multiple','fill','judge');
 
 CREATE TABLE questions

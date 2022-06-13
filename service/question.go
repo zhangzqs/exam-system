@@ -98,26 +98,32 @@ func AddJudgeQuestion(operatorUid int, question *JudgeQuestion) (int, error) {
 }
 
 func DeleteQuestion(operatorUid int, id int) bool {
+	Todo()
 	return true
 }
 
 func UpdateSingleQuestion(operatorUid int, qid int, question *SingleQuestion) error {
+	Todo()
 	return nil
 }
 func UpdateMultipleQuestion(operatorUid int, qid int, question *MultipleQuestion) error {
+	Todo()
 	return nil
 
 }
 func UpdateFillQuestion(operatorUid int, qid int, question *FillQuestion) error {
+	Todo()
 	return nil
 
 }
 func UpdateJudgeQuestion(operatorUid int, qid int, question *JudgeQuestion) error {
+	Todo()
 	return nil
 
 }
 
 func GetQuestion(operatorUid int, id int) any {
+	Todo()
 	return nil
 }
 

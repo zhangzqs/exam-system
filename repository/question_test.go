@@ -27,3 +27,11 @@ func TestGetQuestion(t *testing.T) {
 	}
 	log.Println(q)
 }
+
+func TestGetUserQuestions(t *testing.T) {
+	q, err := GetUserQuestions(7, 0, 10)
+	if err != nil {
+		log.Println(err)
+	}
+	log.Println(q)
+}

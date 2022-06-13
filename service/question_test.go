@@ -30,3 +30,7 @@ func TestAddJudgeQuestion(t *testing.T) {
 		Answer: false,
 	})
 }
+
+func TestGetQuestion(t *testing.T) {
+
+}

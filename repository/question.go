@@ -30,7 +30,8 @@ func AddQuestion(question *Question) (id int, err error) {
 func GetQuestion(id int) (*Question, error) {
 	var q Question
 	db := global.GetDatabase()
-	if err := db.QueryRow("SELECT created_by, title, type, option, answer FROM questions WHERE qid=$1", id).Scan(
+	if err := db.QueryRow("SELECT * FROM questions WHERE qid=$1", id).Scan(
+		&q.Qid,
 		&q.CreatedBy,
 		&q.Title,
 		&q.Type,
@@ -44,7 +45,7 @@ func GetQuestion(id int) (*Question, error) {
 // GetUserQuestions 获取用户的所有题目
 func GetUserQuestions(uid int, pageId int, limit int) ([]Question, error) {
 	db := global.GetDatabase()
-	cur, err := db.Query("SELECT * FROM questions WHERE created_by=$1 LIMIT=$2 OFFSET=$3", uid, pageId, limit)
+	cur, err := db.Query("SELECT * FROM questions WHERE created_by=$1 LIMIT $2 OFFSET $3", uid, limit, pageId*limit)
 	if err != nil {
 		return nil, err
 	}

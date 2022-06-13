@@ -138,10 +138,9 @@ func GetQuestion(c *gin.Context) {
 	id, err := strconv.Atoi(idStr)
 	if err != nil {
 		RequestContentError(c, err.Error())
+		return
 	}
-	uid := GetUid(c)
-
-	q, err := service.GetQuestion(uid, id)
+	q, err := service.GetQuestion(GetUid(c), id)
 	if err != nil {
 		DatabaseError(c, err)
 		return
@@ -150,8 +149,13 @@ func GetQuestion(c *gin.Context) {
 }
 
 func GetUserQuestions(c *gin.Context) {
-	//uid := GetUid(c)
-
-	//service.GetUserQuestions(uid)
-	SuccessfulApiResponse(c)
+	pid, ps := GetPageInfo(c)
+	q, err := service.GetUserQuestions(GetUid(c), pid, ps)
+	if err != nil {
+		DatabaseError(c, err)
+		return
+	}
+	SuccessfulApiResponse(c, gin.H{
+		"questions": q,
+	})
 }

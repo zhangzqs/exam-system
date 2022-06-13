@@ -168,8 +168,9 @@ func qTabEntity2Judge(question *repository.Question) *JudgeQuestion {
 }
 
 type Question struct {
-	Type    string `json:"type"`
-	Content any    `json:"content"`
+	Id      int    `json:"id"`
+	Type    string `json:"type" binding:"required"`
+	Content any    `json:"content" binding:"required"`
 }
 
 func qTabEntity2Question(q *repository.Question) *Question {
@@ -187,6 +188,7 @@ func qTabEntity2Question(q *repository.Question) *Question {
 		panic("数据库包含异常类型：" + q.Type)
 	}
 	return &Question{
+		Id:      q.Qid,
 		Type:    q.Type,
 		Content: question,
 	}

@@ -19,3 +19,11 @@ func TestAddQuestion(t *testing.T) {
 	}
 	log.Println("qid: ", qid)
 }
+
+func TestGetQuestion(t *testing.T) {
+	q, err := GetQuestion(2)
+	if err != nil {
+		log.Println(err)
+	}
+	log.Println(q)
+}

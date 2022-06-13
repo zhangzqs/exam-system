@@ -25,3 +25,17 @@ func AddQuestion(question *Question) (id int, err error) {
 	}
 	return
 }
+
+func GetQuestion(id int) (*Question, error) {
+	var q Question
+	db := global.GetDatabase()
+	if err := db.QueryRow("SELECT created_by, title, type, option, answer FROM questions WHERE qid=$1", id).Scan(
+		&q.Uid,
+		&q.Title,
+		&q.Type,
+		&q.Options,
+		&q.Answer); err != nil {
+		return nil, err
+	}
+	return &q, nil
+}

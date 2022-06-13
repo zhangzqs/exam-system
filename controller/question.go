@@ -7,11 +7,6 @@ import (
 	"strconv"
 )
 
-type Question[T any] struct {
-	Type    string `json:"type"`
-	Content T      `json:"content"`
-}
-
 func AddQuestion(c *gin.Context) {
 	uid := GetUid(c)
 	mp := make(map[string]any)
@@ -146,13 +141,17 @@ func GetQuestion(c *gin.Context) {
 	}
 	uid := GetUid(c)
 
-	service.GetQuestion(uid, id)
-	SuccessfulApiResponse(c)
+	q, err := service.GetQuestion(uid, id)
+	if err != nil {
+		DatabaseError(c, err)
+		return
+	}
+	SuccessfulApiResponse(c, q)
 }
 
 func GetUserQuestions(c *gin.Context) {
-	uid := GetUid(c)
+	//uid := GetUid(c)
 
-	service.GetUserQuestions(uid)
+	//service.GetUserQuestions(uid)
 	SuccessfulApiResponse(c)
 }

@@ -59,8 +59,8 @@ func RequestFormatError(c *gin.Context, errorMsg ...any) {
 	errorApiResponse(c, RequestFormatErrorCode, "请求格式有误", errorMsg)
 }
 
-func RequestContentError(c *gin.Context, msg string, errorMsg ...any) {
-	errorApiResponse(c, RequestContentErrorCode, "请求内容有误：", msg, errorMsg)
+func RequestContentError(c *gin.Context, errorMsg ...any) {
+	errorApiResponse(c, RequestContentErrorCode, "请求内容有误：", errorMsg)
 
 }
 

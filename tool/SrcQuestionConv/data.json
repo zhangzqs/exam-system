@@ -1,0 +1,582 @@
+[
+  {
+    "content": "{\"title\": \"Hadoop\\u6709\\u591a\\u79cd\\u6d4f\\u89c8HDFS\\u6587\\u4ef6\\u76ee\\u5f55\\u7684\\u65b9\\u5f0f\\uff0c\\u4e0b\\u5217\\u65b9\\u5f0f\\u9519\\u8bef\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u901a\\u8fc7HDFS\\u547d\\u4ee4\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u901a\\u8fc7Web\\u6d4f\\u89c8\\u5668\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u901a\\u8fc7Eclipse\\u4e2d\\u7684Project Explorer\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u901a\\u8fc7SSH\\u5ba2\\u6237\\u7aef\\u5de5\\u5177\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a D \"}",
+    "key": "4a285dad20aac5ee3d1f5001116e5fd5",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"Hadoop\\u914d\\u7f6e\\u6587\\u4ef6\\u4e2d\\uff0cyarn-site.xml\\u6587\\u4ef6\\u7684\\u4f5c\\u7528\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u4fdd\\u5b58\\u4ece\\u8282\\u70b9\\u4fe1\\u606f\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u914d\\u7f6eYARN\\u6846\\u67b6\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u914d\\u7f6eMapReduce\\u6846\\u67b6\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u914d\\u7f6eHadoop\\u7684HDFS\\u7cfb\\u7edf\\u7684\\u547d\\u540d\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a B \"}",
+    "key": "ffc0f26cc6052db5fe2e1c4f8d0781d6",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u5217\\u8bf4\\u6cd5\\u9519\\u8bef\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"Map\\u51fd\\u6570\\u5c06\\u8f93\\u5165\\u7684\\u5143\\u7d20\\u8f6c\\u6362\\u6210<key,value>\\u5f62\\u5f0f\\u7684\\u952e\\u503c\\u5bf9\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"MapReduce\\u6846\\u67b6\\u91c7\\u7528\\u4e86Master/Slave\\u67b6\\u6784\\uff0c\\u5305\\u62ec\\u4e00\\u4e2aMaster\\u548c\\u82e5\\u5e72\\u4e2aSlave\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"Hadoop\\u6846\\u67b6\\u662f\\u7528Java\\u5b9e\\u73b0\\u7684\\uff0cMapReduce\\u5e94\\u7528\\u7a0b\\u5e8f\\u5219\\u4e00\\u5b9a\\u8981\\u7528Java\\u6765\\u5199\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u4e0d\\u540c\\u7684Map\\u4efb\\u52a1\\u4e4b\\u95f4\\u4e0d\\u80fd\\u4e92\\u76f8\\u901a\\u4fe1\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a C \"}",
+    "key": "1aee4a60a7d2e994b978fb311e6a6f8a",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u5217\\u6587\\u4ef6\\u4e0d\\u5c5e\\u4e8eHadoop3.x\\u96c6\\u7fa4\\u90e8\\u7f72\\u65f6\\u5fc5\\u9700\\u914d\\u7f6e\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"worker\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"hadoop-env.sh\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"profile\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"yarn-site.xml\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a C \"}",
+    "key": "3dd8e3330489568d99e66be823ce9233",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u5173\\u4e8eNameNode\\u548cDataNode\\u63cf\\u8ff0\\u9519\\u8bef\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"NameNode\\u5b58\\u50a8\\u5143\\u6570\\u636e\\u4fe1\\u606f\\uff0cDataNode\\u5b58\\u50a8\\u6570\\u636e\\u6587\\u4ef6\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"DataNode\\u7ef4\\u62a4block\\u5217\\u8868\\u4fe1\\u606f\\uff0c\\u5e76\\u4e0a\\u62a5\\u7ed9NameNode\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"NameNode\\u7ef4\\u62a4\\u6587\\u4ef6\\u3001block\\u548cDataNode\\u4e4b\\u95f4\\u7684\\u6620\\u5c04\\u5173\\u7cfb\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u5ba2\\u6237\\u7aef\\u540c\\u65f6\\u5411\\u591a\\u4e2a\\u526f\\u672c\\u7684DataNode\\u4f20\\u8f93\\u6570\\u636e\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a D \"}",
+    "key": "f405834ee05086b00880c9d73cb870d3",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4ee5\\u4e0b\\u54ea\\u4e2a\\u662fMapReduce\\u7684\\u9002\\u7528\\u573a\\u666f\\uff1f\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u9002\\u7528\\u4e8e\\u6d77\\u91cf\\u6d41\\u6570\\u636e\\u7684\\u5904\\u7406\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u9002\\u7528\\u4e8e\\u6d77\\u91cf\\u6570\\u636e\\u7684\\u6279\\u5904\\u7406\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u53ef\\u4ee5\\u5b9e\\u73b0\\u79d2\\u7ea7\\u7ed3\\u679c\\u8fd4\\u56de\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u53ef\\u4ee5\\u5e94\\u5bf9\\u591a\\u6b65\\u9aa4\\u590d\\u6742\\u7684\\u6570\\u636e\\u5904\\u7406\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a B \"}",
+    "key": "5d42362a614006756270b732453427ee",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"HDFS\\u7684\\u547d\\u540d\\u7a7a\\u95f4\\u4e0d\\u5305\\u542b\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u6587\\u4ef6\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u76ee\\u5f55\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u5757\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u5b57\\u8282\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a D \"}",
+    "key": "100d8cb8581c5e6dae6571441c8777a7",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4f55\\u79cd\\u60c5\\u51b5\\u4f1a\\u89e6\\u53d1HDFS\\u8fdb\\u5165\\u5b89\\u5168\\u6a21\\u5f0f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"DataNode\\u65e0\\u6cd5\\u6b63\\u5e38\\u542f\\u52a8\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"NameNode\\u91cd\\u542f\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"NameNode\\u78c1\\u76d8\\u7a7a\\u95f4\\u4e0d\\u8db3\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"Block\\u4e0a\\u62a5\\u7387\\u4f4e\\u4e8e\\u9608\\u503c\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ABCD \"}",
+    "key": "6e9e19750eb5e22d28e1c045468d4b8a",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"Hadoop\\u975eHA\\u6a21\\u5f0f\\u914d\\u7f6e\\u524d\\u9700\\u8981\\u8282\\u70b9\\u5b8c\\u6210\\u7684\\u524d\\u671f\\u51c6\\u5907\\u6709\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u4fee\\u6539\\u521d\\u59cbIP\\u4e3a\\u9759\\u6001IP\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u5b89\\u88c5\\u597d\\u9002\\u914d\\u7248\\u672c\\u7684JDK\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u4e3b\\u8282\\u70b9\\u4e0e\\u5176\\u4ed6\\u8282\\u70b9\\u4ea4\\u4e92\\u7684\\u65e0\\u5bc6\\u7801\\u767b\\u5f55\\u8bbe\\u7f6e\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"Zookeeper\\u5b89\\u88c5\\u914d\\u7f6e\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ABC \"}",
+    "key": "c661c4b6f7c7364050e05381b5b0511b",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u5173\\u4e8eHadoop\\u4e09\\u5927\\u6846\\u67b6HDFS\\u3001YARN\\u548cMapReduce\\u8bf4\\u6cd5\\u9519\\u8bef\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"HDFS\\u4e3b\\u8981\\u6709NameNode\\u3001Client\\u548cDataNode\\u4e09\\u90e8\\u5206\\u7ec4\\u6210\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"MapReduce\\u7a0b\\u5e8f\\u7f16\\u5199\\u65f6\\uff0cDriver\\u7c7b\\u548cInputformat\\u7c7b\\u4e00\\u6837\\u53ef\\u4f7f\\u7528\\u7cfb\\u7edf\\u9ed8\\u8ba4\\uff0c\\u4e00\\u822c\\u4e0d\\u7528\\u4e13\\u95e8\\u7f16\\u5199\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"YARN\\u6846\\u67b6\\u4e2d\\u7684Application Master\\u4e00\\u76f4\\u5b58\\u5728\\uff0c\\u4e3a\\u4e86\\u65b9\\u4fbf\\u4efb\\u52a1\\u542f\\u52a8\\u65f6\\u76d1\\u63a7\\u8fdb\\u7a0b\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"MapReuduce\\u6846\\u67b6\\u7684\\u8ba1\\u7b97\\u8d44\\u6e90\\u7531YARN\\u6846\\u67b6\\u8c03\\u914d\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a BC \"}",
+    "key": "a16b8dd1f00c00853f1c8df11cd0d5d4",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"Hadoop\\u5b89\\u88c5\\u90e8\\u7f72\\u65f6\\u9700\\u8981\\u4fee\\u6539\\u76f8\\u5e94\\u7684\\u914d\\u7f6e\\u6587\\u4ef6\\uff0c\\u4e0b\\u5217\\u8bf4\\u6cd5\\u6b63\\u786e\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"/etc/profile\\u6587\\u4ef6\\uff1a\\u4fee\\u6539IP\\u6620\\u5c04\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"hadoop-env.sh\\u6587\\u4ef6\\uff1a\\u6dfb\\u52a0JDK\\u73af\\u5883\\u53d8\\u91cf\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"yarn-site.xml\\u6587\\u4ef6\\uff1a\\u914d\\u7f6eYARN\\u6846\\u67b6\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"slaves\\u6587\\u4ef6\\uff1a\\u6dfb\\u52a0\\u5404\\u4e2a\\u6570\\u636e\\u8282\\u70b9\\u540d\\u79f0\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a BCD \"}",
+    "key": "6aaa33877c8e5b0cf81893445ba8789e",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u5217\\u5173\\u4e8e\\u4f20\\u7edf\\u5e76\\u884c\\u8ba1\\u7b97\\u6846\\u67b6\\uff08\\u6bd4\\u5982MPI\\uff09\\u548cMapReduce\\u5e76\\u884c\\u8ba1\\u7b97\\u6846\\u67b6\\u8fdb\\u884c\\u6bd4\\u8f83\\uff0c\\u6b63\\u786e\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u524d\\u8005\\u76f8\\u6bd4\\u540e\\u8005\\u5b66\\u4e60\\u8d77\\u6765\\u66f4\\u96be\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u524d\\u8005\\u6240\\u9700\\u786c\\u4ef6\\u4ef7\\u683c\\u8d35\\uff0c\\u53ef\\u6269\\u5c55\\u6027\\u5dee\\uff0c\\u540e\\u8005\\u786c\\u4ef6\\u4fbf\\u5b9c\\uff0c\\u6269\\u5c55\\u6027\\u597d\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u524d\\u8005\\u662f\\u5171\\u4eab\\u5f0f(\\u5171\\u4eab\\u5185\\u5b58/\\u5171\\u4eab\\u5b58\\u50a8)\\uff0c\\u5bb9\\u9519\\u6027\\u5dee\\uff0c\\u540e\\u8005\\u662f\\u975e\\u5171\\u4eab\\u5f0f\\u7684\\uff0c\\u5bb9\\u9519\\u6027\\u597d\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u524d\\u8005\\u9002\\u7528\\u4e8e\\u5b9e\\u65f6\\u3001\\u7ec6\\u7c92\\u5ea6\\u8ba1\\u7b97\\u3001\\u8ba1\\u7b97\\u5bc6\\u96c6\\u578b\\uff0c\\u540e\\u8005\\u9002\\u7528\\u4e8e\\u6279\\u5904\\u7406\\u3001\\u975e\\u5b9e\\u65f6\\u3001\\u6570\\u636e\\u5bc6\\u96c6\\u578b\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ABCD \"}",
+    "key": "7c347854c82280f301e9c0a8fbdf3f2d",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4ee5\\u4e0b\\u5bf9\\u6570\\u636e\\u8282\\u70b9\\u7406\\u89e3\\u6b63\\u786e\\u7684\\u662f:\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u6570\\u636e\\u8282\\u70b9\\u5728\\u540d\\u79f0\\u8282\\u70b9\\u7684\\u7edf\\u4e00\\u8c03\\u5ea6\\u4e0b\\u8fdb\\u884c\\u6570\\u636e\\u5757\\u7684\\u521b\\u5efa\\u3001\\u5220\\u9664\\u548c\\u590d\\u5236\\u7b49\\u64cd\\u4f5c\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u6570\\u636e\\u8282\\u70b9\\u901a\\u5e38\\u53ea\\u6709\\u4e00\\u4e2a\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u6570\\u636e\\u8282\\u70b9\\u7528\\u6765\\u5b58\\u50a8\\u5177\\u4f53\\u7684\\u6587\\u4ef6\\u5185\\u5bb9\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u6570\\u636e\\u8282\\u70b9\\u7684\\u6570\\u636e\\u4fdd\\u5b58\\u5728\\u78c1\\u76d8\\u4e2d\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ACD \"}",
+    "key": "6d9a6b4ede96768eff17bcb4054cad67",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"Hadoop\\u7684\\u8fd0\\u884c\\u6a21\\u5f0f\\u6709\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u672c\\u5730\\u6a21\\u5f0f\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u4f2a\\u5206\\u5e03\\u5f0f\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u5168\\u5206\\u5e03\\u5f0f\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"HA\\u6a21\\u5f0f\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ABC \"}",
+    "key": "c12b24ff1049b0ee4144e48fc46627de",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u5217\\u5173\\u4e8eHDFS\\u8bf4\\u6cd5\\u6b63\\u786e\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"HDFS\\u662f\\u5206\\u5e03\\u5f0f\\u6587\\u4ef6\\u7cfb\\u7edf\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"HDFS\\u6b63\\u5e38\\u5de5\\u4f5c\\u7684\\u60c5\\u51b5\\u4e0b\\uff0c\\u4e3b\\u8981\\u8fdb\\u7a0b\\u6709\\u4e00\\u4e2aNameNode\\u548c\\u82e5\\u5e72\\u4e2aDataNode\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"HDFS\\u4e2dSecondary NameNode\\u662f\\u5bf9NameNode\\u8282\\u70b9\\u5b95\\u673a\\u7684\\u9884\\u9632\\u63aa\\u65bd\\uff0c\\u8fd9\\u4e24\\u4e2a\\u8fdb\\u7a0b\\u9700\\u8981\\u5728\\u540c\\u4e00\\u4e2a\\u8282\\u70b9\\u4e0a\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u5f53\\u6570\\u636e\\u5b58\\u50a8DataNode\\u65f6\\uff0cDataNode\\u4f1a\\u751f\\u6210\\u6570\\u636e\\u5757\\u5bf9\\u6570\\u636e\\u8fdb\\u884c\\u5b58\\u50a8\\uff0c\\u4e14\\u6570\\u636e\\u5757\\u5927\\u5c0f\\u662f\\u56fa\\u5b9a\\u7684\\uff0c2.x\\u7248\\u672c\\u9ed8\\u8ba4\\u4e3a128MB\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ABD \"}",
+    "key": "986bef4676d060b6e417da54d33cad4b",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"MapReduce V1.x\\u4f53\\u7cfb\\u7ed3\\u6784\\u4e3b\\u8981\\u7531\\u54ea\\u51e0\\u4e2a\\u90e8\\u5206\\u7ec4\\u6210\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"JobTracker\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"Client\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"TaskTracker\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"Task\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ABCD \"}",
+    "key": "fa3b87703db1ed5ad68c69f8205256ee",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u5173\\u4e8eBlock\\u7684\\u63cf\\u8ff0\\u6b63\\u786e\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"Block\\u662fHDFS\\u7684\\u6700\\u5c0f\\u5b58\\u50a8\\u5355\\u5143\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"Block\\u5b58\\u50a8\\u5728DataNode\\u7684\\u672c\\u5730\\u78c1\\u76d8\\u4e0a\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"Block\\u5927\\u5c0f\\u7684\\u8bbe\\u7f6e\\u76ee\\u6807\\u662f\\u8ba9\\u4efb\\u52a1\\u6570\\u91cf\\u5c3d\\u53ef\\u80fd\\u7684\\u5c0f\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"Block\\u4e5f\\u662f\\u6570\\u636e\\u7f51\\u7edc\\u4f20\\u8f93\\u7684\\u6700\\u5c0f\\u5355\\u4f4d\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a AB \"}",
+    "key": "1a4621082fa54cbb71b019236c937728",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4ee5\\u4e0b\\u5bf9\\u540d\\u79f0\\u8282\\u70b9\\u7406\\u89e3\\u6b63\\u786e\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u540d\\u79f0\\u8282\\u70b9\\u7528\\u6765\\u8d1f\\u8d23\\u5177\\u4f53\\u7528\\u6237\\u6570\\u636e\\u7684\\u5b58\\u50a8\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u540d\\u79f0\\u8282\\u70b9\\u4f5c\\u4e3a\\u4e2d\\u5fc3\\u670d\\u52a1\\u5668\\uff0c\\u8d1f\\u8d23\\u7ba1\\u7406\\u6587\\u4ef6\\u7cfb\\u7edf\\u7684\\u547d\\u540d\\u7a7a\\u95f4\\u53ca\\u5ba2\\u6237\\u7aef\\u5bf9\\u6587\\u4ef6\\u7684\\u8bbf\\u95ee\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u540d\\u79f0\\u8282\\u70b9\\u901a\\u5e38\\u7528\\u6765\\u4fdd\\u5b58\\u5143\\u6570\\u636e\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u540d\\u79f0\\u8282\\u70b9\\u7684\\u6570\\u636e\\u4fdd\\u5b58\\u5728\\u5185\\u5b58\\u4e2d\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a BCD \"}",
+    "key": "26049c7f241300aee7ce03e92a10fbe0",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u5173\\u4e8eHadoop\\u4e09\\u5927\\u6846\\u67b6\\u4e4b\\u95f4\\u7684\\u5173\\u7cfb\\uff0c\\u4e0b\\u5217\\u8bf4\\u6cd5\\u9519\\u8bef\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"HDFS\\u4e2d\\u5143\\u6570\\u636e\\u6709YARN\\u6846\\u67b6\\u8fdb\\u884c\\u7ba1\\u63a7\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u5728Hadoop\\u96c6\\u7fa4\\u4e2dMapReduce\\u5904\\u7406\\u7684\\u6570\\u636e\\u4e00\\u822c\\u6765\\u6e90\\u548c\\u8f93\\u51fa\\u8def\\u5f84\\u90fd\\u662fHDFS\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"YARN\\u6846\\u67b6\\u6bcf\\u6b21\\u4e3aMapReduce\\u8c03\\u914d\\u7684\\u8ba1\\u7b97\\u8d44\\u6e90\\u90fd\\u662f\\u67d0\\u4e2a\\u5355\\u8282\\u70b9\\u4e0a\\u7684\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"HDFS\\u7684\\u526f\\u672c\\u673a\\u5236\\u662f\\u7531YARN\\u8fdb\\u884c\\u5206\\u914d\\u7684\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ACD \"}",
+    "key": "5a7663baa4f7e930f5e8569d6820cfca",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"HDFS\\u8003\\u8651\\u8bbe\\u7f6eblock\\u5927\\u5c0f\\u7684\\u76ee\\u6807\\u662f\\uff1a\", \"retMenu\": [], \"ans\": \"\\u7b2c\\u4e00\\u7a7a\\uff1a\\u00a0\\n\\u6700\\u5c0f\\u5316\\u5bfb\\u5740\\u5f00\\u9500\\uff1b\"}",
+    "key": "623e54ede9c4f688bd492901e06b206a",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u5411HDFS\\u4e0b\\u8f7d\\u6587\\u4ef6\\u65f6\\uff0cClient\\u4f1a\\u5bf9\\u6587\\u4ef6\\u8fdb\\u884c\\uff08 \\uff09\\u64cd\\u4f5c\\u3002\", \"retMenu\": [], \"ans\": \"\\u7b2c\\u4e00\\u7a7a\\uff1a\\u00a0\\n\\u5408\\u5e76\\uff1b\"}",
+    "key": "afa6f4390b89aa02207188b7b6a442df",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u5411HDFS\\u4e0a\\u4f20\\u6587\\u4ef6\\u65f6\\uff0cClient\\u4f1a\\u5bf9\\u6587\\u4ef6\\u8fdb\\u884c\\uff08 \\uff09\\u64cd\\u4f5c\\u3002\", \"retMenu\": [], \"ans\": \"\\u7b2c\\u4e00\\u7a7a\\uff1a\\u00a0\\n\\u5207\\u5206\\uff1b\"}",
+    "key": "ef4dae620dc20dbccb67d1c181073a07",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"HDFS\\u7684block\\u5757\\u9ed8\\u8ba4\\u5927\\u5c0f\\u662f____M\\u3002\", \"retMenu\": [], \"ans\": \"\\u7b2c\\u4e00\\u7a7a\\uff1a\\u00a0\\n128\\uff1b\"}",
+    "key": "eaa60a398e0abaabb13957cc0ee1e3b3",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"Reduce\\u4efb\\u52a1\\u7684\\u6570\\u91cf\\u662f\\u7531Partition\\u7684\\u6570\\u91cf\\u786e\\u5b9a\\u7684\\u3002\", \"retMenu\": [], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a\\u00d7\"}",
+    "key": "48ff9e0b59d72eed872b53246ba0ca7f",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"MapReduce\\u8bbe\\u8ba1\\u7684\\u4e00\\u4e2a\\u7406\\u5ff5\\u5c31\\u662f\\u201c\\u8ba1\\u7b97\\u5411\\u6570\\u636e\\u9760\\u62e2\\u201d\\uff0c\\u800c\\u4e0d\\u662f\\u201c\\u6570\\u636e\\u5411\\u8ba1\\u7b97\\u9760\\u62e2\\u201d\\uff0c\\u56e0\\u4e3a\\uff0c\\u79fb\\u52a8\\u6570\\u636e\\u9700\\u8981\\u5927\\u91cf\\u7684\\u7f51\\u7edc\\u4f20\\u8f93\\u5f00\\u9500\\u3002\", \"retMenu\": [], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a\\u221a\"}",
+    "key": "e7687a2b0dac9559aa1f2ce76e828a84",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u82e5\\u5c06MapReduce\\u7a0b\\u5e8f\\u6253\\u5305\\u4e3ajar\\u5305\\u7684\\u5f62\\u5f0f\\u5728\\u96c6\\u7fa4\\u8282\\u70b9\\u8fd0\\u884c\\uff0c\\u8fd0\\u884c\\u7684shell\\u547d\\u4ee4\\u4e3a\\u201cyarn df jar\\u201d\\u3002\", \"retMenu\": [], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a\\u00d7\"}",
+    "key": "f51daa7f3622bc6342696dfe63af1e10",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"MapReduce\\u4e2dReduce\\u63a5\\u6536\\u7684\\u952e\\u503c\\u5bf9\\u6570\\u636e\\u7c7b\\u578b\\u4e0eMap\\u4f20\\u51fa\\u7684\\u952e\\u503c\\u5bf9\\u6570\\u636e\\u7c7b\\u578b\\u65e0\\u9700\\u4e00\\u81f4\\u3002\\u3002\", \"retMenu\": [], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a\\u00d7\"}",
+    "key": "f78e39afba2770d0cd1922a81b921835",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"NameNode\\u53ef\\u4ee5\\u540cClient\\u8fdb\\u884c\\u4ea4\\u4e92\\uff0c\\u5e76\\u5904\\u7406Client\\u5ba2\\u6237\\u7aef\\u7684\\u8bfb\\u5199\\u8bf7\\u6c42\\u3002\", \"retMenu\": [], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a\\u221a\"}",
+    "key": "79dd5fad56757ce007f64191bbab643d",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"MapReduce\\u4efb\\u52a1\\u5206\\u7247\\u7684\\u4e2a\\u6570\\uff0c\\u9ed8\\u8ba4\\u4e0e\\u6570\\u636e\\u6240\\u5360\\u7528\\u7684\\u6570\\u636e\\u5757\\u4e2a\\u6570\\u4e00\\u81f4\\u3002\", \"retMenu\": [], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a\\u221a\"}",
+    "key": "7a207d6ce19bff6eb9cf34285ba75071",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"Hadoop\\u652f\\u6301\\u5355\\u6761\\u6570\\u636e\\u8bb0\\u5f55\\u7684\\u4fee\\u6539\\u3002\", \"retMenu\": [], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a\\u00d7\"}",
+    "key": "68b528f99f4e85cc2f90d7fd63456499",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u5ba2\\u6237\\u7aef\\u662f\\u901a\\u8fc7 \\u7ea7\\u5bfb\\u5740\\u6765\\u5b9a\\u4f4dRegion\\u3002\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u4e00\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u4e8c\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u4e09\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u56db\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a C \"}",
+    "key": "507ced5a9566a13ab672c3d2e37bb48e",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u5217\\u5173\\u4e8eHive\\u57fa\\u672c\\u64cd\\u4f5c\\u547d\\u4ee4\\u7684\\u89e3\\u91ca\\u9519\\u8bef\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"insert overwrite table student select * from user where age>10; //\\u5411\\u8868student\\u4e2d\\u63d2\\u5165\\u6765\\u81eauser\\u8868\\u7684age\\u5927\\u4e8e10\\u7684\\u6570\\u636e\\u5e76\\u8986\\u76d6student\\u8868\\u4e2d\\u539f\\u6709\\u6570\\u636e\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"create database userdb;//\\u521b\\u5efa\\u6570\\u636e\\u5e93userdb\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"load data local inpath \\u2018/usr/local/data\\u2019 overwrite into table usr; //\\u628a\\u76ee\\u5f55\\u2019/usr/local/data\\u2019\\u4e0b\\u7684\\u6570\\u636e\\u6587\\u4ef6\\u4e2d\\u7684\\u6570\\u636e\\u4ee5\\u8ffd\\u52a0\\u7684\\u65b9\\u5f0f\\u88c5\\u8f7d\\u8fdbusr\\u8868\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"create table if not exists usr(id bigint,name string,age int);//\\u5982\\u679cusr\\u8868\\u4e0d\\u5b58\\u5728\\uff0c\\u521b\\u5efa\\u8868usr\\uff0c\\u542b\\u4e09\\u4e2a\\u5c5e\\u6027id,name,age\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a C \"}",
+    "key": "bb20522d1333ba3fb8cd1676fbae8744",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u5217\\u8bf4\\u6cd5\\u6b63\\u786e\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"Zookeeper\\u662f\\u4e00\\u4e2a\\u96c6\\u7fa4\\u7ba1\\u7406\\u5de5\\u5177\\uff0c\\u5e38\\u7528\\u4e8e\\u5206\\u5e03\\u5f0f\\u8ba1\\u7b97\\uff0c\\u63d0\\u4f9b\\u914d\\u7f6e\\u7ef4\\u62a4\\u3001\\u57df\\u540d\\u670d\\u52a1\\u3001\\u5206\\u5e03\\u5f0f\\u540c\\u6b65\\u7b49\\u3002\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"HBase\\u7684\\u5b9e\\u73b0\\u5305\\u62ec\\u7684\\u4e3b\\u8981\\u529f\\u80fd\\u7ec4\\u4ef6\\u662f\\u5e93\\u51fd\\u6570\\uff0c\\u4e00\\u4e2aMaster\\u4e3b\\u670d\\u52a1\\u5668\\u548c\\u4e00\\u4e2aRegion\\u670d\\u52a1\\u5668\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u5982\\u679c\\u4e0d\\u542f\\u52a8Hadoop\\uff0c\\u5219HBase\\u5b8c\\u5168\\u65e0\\u6cd5\\u4f7f\\u7528\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u5982\\u679c\\u901a\\u8fc7HBase Shell\\u63d2\\u5165\\u8868\\u6570\\u636e\\uff0c\\u53ef\\u4ee5\\u63d2\\u5165\\u4e00\\u884c\\u6570\\u636e\\u6216\\u4e00\\u4e2a\\u5355\\u5143\\u683c\\u6570\\u636e\\u3002\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a A \"}",
+    "key": "d24b1c0f8c1d53652b15acd1badca2eb",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4ee5\\u4e0b\\u54ea\\u4e2a\\u4e0d\\u662fHive\\u7684\\u7279\\u70b9\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"Hive\\u7684\\u7ed3\\u679c\\u8fd4\\u56de\\u5ef6\\u8fdf\\u8f83\\u9ad8\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"Hive\\u53ef\\u4ee5\\u5728\\u89c6\\u56fe\\u4e0a\\u66f4\\u65b0\\u3001\\u63d2\\u5165\\u548c\\u5220\\u9664\\u6570\\u636e\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"Hive\\u6682\\u4e0d\\u652f\\u6301\\u5b58\\u50a8\\u8fc7\\u7a0b\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"Hive\\u6682\\u4e0d\\u652f\\u6301\\u5217\\u7ea7\\u522b\\u6570\\u636e\\u7684\\u589e\\u52a0\\u3001\\u66f4\\u65b0\\u3001\\u5220\\u9664\\u64cd\\u4f5c\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a B \"}",
+    "key": "8f388670ee64cb5f22c144da9cbff84f",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u5f53\\u524d\\uff0c\\u5bf9\\u4e8eHBase\\u6570\\u636e\\u5e93\\u800c\\u8a00\\uff0c\\u6bcf\\u4e2aRegion\\u7684\\u5efa\\u8bae\\u6700\\u4f73\\u5927\\u5c0f\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"100MB-200MB\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"500MB-1000MB\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"1GB-2GB\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"2GB-4GB\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a C \"}",
+    "key": "6aacb8ba8e36db7bd1a652f118b45409",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u5217\\u5bf9HBase\\u6570\\u636e\\u6a21\\u578b\\u7684\\u63cf\\u8ff0\\u9519\\u8bef\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u6bcf\\u4e2aHBase\\u8868\\u90fd\\u7531\\u82e5\\u5e72\\u884c\\u7ec4\\u6210\\uff0c\\u6bcf\\u4e2a\\u884c\\u7531\\u884c\\u952e\\uff08row key\\uff09\\u6765\\u6807\\u8bc6\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"HBase\\u662f\\u4e00\\u4e2a\\u7a00\\u758f\\u3001\\u591a\\u7ef4\\u5ea6\\u3001\\u6392\\u5e8f\\u7684\\u6620\\u5c04\\u8868\\uff0c\\u8fd9\\u5f20\\u8868\\u7684\\u7d22\\u5f15\\u662f\\u884c\\u952e\\u3001\\u5217\\u65cf\\u3001\\u5217\\u9650\\u5b9a\\u7b26\\u548c\\u65f6\\u95f4\\u6233\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"HBase\\u5217\\u65cf\\u652f\\u6301\\u52a8\\u6001\\u6269\\u5c55\\uff0c\\u53ef\\u4ee5\\u5f88\\u8f7b\\u677e\\u5730\\u6dfb\\u52a0\\u4e00\\u4e2a\\u5217\\u65cf\\u6216\\u5217\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"HBase\\u4e2d\\u6267\\u884c\\u66f4\\u65b0\\u64cd\\u4f5c\\u65f6\\uff0c\\u4f1a\\u5220\\u9664\\u6570\\u636e\\u65e7\\u7684\\u7248\\u672c\\uff0c\\u5e76\\u751f\\u6210\\u4e00\\u4e2a\\u65b0\\u7684\\u7248\\u672c\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a D \"}",
+    "key": "4a6e9609e21ccf6b44d9dfad3808bf2e",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u5173\\u4e8eHive\\u5185\\u90e8\\u8868\\u4e0e\\u5916\\u90e8\\u8868\\u7684\\u63cf\\u8ff0\\u9519\\u8bef\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u5185\\u90e8\\u8868\\u7684\\u521b\\u5efa\\u8fc7\\u7a0b\\u548c\\u6570\\u636e\\u52a0\\u8f7d\\u8fc7\\u7a0b\\uff0c\\u53ef\\u4ee5\\u5206\\u522b\\u72ec\\u7acb\\u5b8c\\u6210\\uff0c\\u4e5f\\u53ef\\u4ee5\\u5728\\u540c\\u4e00\\u4e2a\\u8bed\\u53e5\\u4e2d\\u4e00\\u6b21\\u5b8c\\u6210\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u5220\\u9664\\u5185\\u90e8\\u8868\\u65f6\\uff0c\\u5143\\u6570\\u636e\\u4e0e\\u6570\\u636e\\u90fd\\u4f1a\\u88ab\\u5220\\u9664\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u5916\\u90e8\\u8868\\u6307\\u5411\\u5df2\\u7ecf\\u5728HDFS\\u4e2d\\u5b58\\u5728\\u7684\\u6570\\u636e\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u5220\\u9664\\u5916\\u90e8\\u8868\\u65f6\\uff0c\\u5143\\u6570\\u636e\\u4e0e\\u6570\\u636e\\u90fd\\u4f1a\\u88ab\\u5220\\u9664\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a D \"}",
+    "key": "2963190f776f9ef08ce9450da7d34580",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u5173\\u4e8eHBase\\u4e2dHlog\\u7684\\u63cf\\u8ff0\\u9519\\u8bef\\u7684\\u662f\\uff1a\\n\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"Hlog\\u662f\\u4ee5WAL\\uff08\\u9884\\u5199\\u65e5\\u5fd7\\uff09\\u65b9\\u5f0f\\u5728\\u5199\\u6570\\u636e\\u65f6\\u4ea7\\u751f\\u7684\\u65e5\\u5fd7\\u6587\\u4ef6\\n\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"HBase\\u5199\\u6570\\u636e\\u65f6\\uff0c\\u5148\\u5199Hlog\\uff0c\\u7136\\u540e\\u5c31\\u5199\\u5165StoreFile\\n\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u5b9a\\u671f\\u4f1a\\u5220\\u9664Hlog\\u8fc7\\u671f\\u6570\\u636e\\n\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u4e00\\u4e2aRegion\\u670d\\u52a1\\u5668\\u53ea\\u6709\\u4e00\\u4e2aHlog\\u6587\\u4ef6\\uff0c\\u53ef\\u4ee5\\u63d0\\u9ad8\\u5bf9\\u8868\\u7684\\u5199\\u64cd\\u4f5c\\u6027\\u80fd\\n\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a B \"}",
+    "key": "04bd4303fdc7dd44a1f106f0ae76e476",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"HBase\\u662f\\u4e00\\u79cd \\u6570\\u636e\\u5e93\\u3002\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u5217\\u5f0f\\u6570\\u636e\\u5e93\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u5173\\u7cfb\\u6570\\u636e\\u5e93\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u6587\\u6863\\u6570\\u636e\\u5e93\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u884c\\u5f0f\\u6570\\u636e\\u5e93\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a A \"}",
+    "key": "9c4c7f5b3ec368013d966da38db8b5ab",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u5173\\u4e8e\\u5206\\u533a\\u548c\\u5206\\u6876\\u7684\\u63cf\\u8ff0\\uff0c\\u54ea\\u4e9b\\u662f\\u6b63\\u786e\\u7684\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u5206\\u533a\\u548c\\u5206\\u6876\\u7684\\u76ee\\u7684\\u90fd\\u662f\\u4e3a\\u4e86\\u63d0\\u9ad8\\u6570\\u636e\\u68c0\\u7d22\\u7684\\u6548\\u7387\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u5206\\u533a\\u7684\\u6570\\u91cf\\u901a\\u5e38\\u662f\\u4e0d\\u56fa\\u5b9a\\u7684\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u5206\\u6876\\u7684\\u6570\\u636e\\u901a\\u5e38\\u662f\\u4e0d\\u56fa\\u5b9a\\u7684\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u5206\\u533a\\u4e4b\\u4e0b\\u53ef\\u518d\\u6709\\u5206\\u533a\\u6216\\u8005\\u5206\\u6876\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ABD \"}",
+    "key": "a4de1a74838aea03c6f228f0ec4f9f1e",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u5173\\u4e8eHBase Shell\\u547d\\u4ee4\\u89e3\\u91ca\\u9519\\u8bef\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"get\\uff1a\\u901a\\u8fc7\\u8868\\u540d\\u3001\\u884c\\u3001\\u5217\\u3001\\u65f6\\u95f4\\u6233\\u3001\\u65f6\\u95f4\\u8303\\u56f4\\u548c\\u7248\\u672c\\u53f7\\u6765\\u83b7\\u5f97\\u76f8\\u5e94\\u5355\\u5143\\u683c\\u7684\\u503c\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"list\\uff1a\\u663e\\u793a\\u8868\\u7684\\u6240\\u6709\\u6570\\u636e\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"put\\uff1a\\u5411\\u8868\\u3001\\u884c\\u3001\\u5217\\u6307\\u5b9a\\u7684\\u5355\\u5143\\u683c\\u6dfb\\u52a0\\u6570\\u636e\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"create\\uff1a\\u521b\\u5efa\\u8868\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a B \"}",
+    "key": "7f316e0f02cc2535611283cb4211f578",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u5217\\u5bf9HBase\\u7684\\u7406\\u89e3\\u6b63\\u786e\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"HBase\\u591a\\u7528\\u4e8e\\u5b58\\u50a8\\u975e\\u7ed3\\u6784\\u5316\\u548c\\u534a\\u7ed3\\u6784\\u5316\\u7684\\u677e\\u6563\\u6570\\u636e\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"HBase\\u662f\\u9488\\u5bf9\\u8c37\\u6b4cBigTable\\u7684\\u5f00\\u6e90\\u5b9e\\u73b0\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"HBase\\u662f\\u4e00\\u4e2a\\u884c\\u5f0f\\u5206\\u5e03\\u5f0f\\u6570\\u636e\\u5e93\\uff0c\\u662fHadoop\\u751f\\u6001\\u7cfb\\u7edf\\u4e2d\\u7684\\u4e00\\u4e2a\\u7ec4\\u4ef6\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"HBase\\u662f\\u4e00\\u79cd\\u5173\\u7cfb\\u578b\\u6570\\u636e\\u5e93\\uff0c\\u73b0\\u6210\\u529f\\u5e94\\u7528\\u4e8e\\u4e92\\u8054\\u7f51\\u670d\\u52a1\\u9886\\u57df\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a AB \"}",
+    "key": "d1b5cc73a47b697f165f6ff102f56c6e",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u5173\\u4e8eHive\\u7684\\u8bf4\\u6cd5\\u6b63\\u786e\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"Hive\\u5c06\\u5143\\u6570\\u636e\\u5b58\\u50a8\\u5728\\u5173\\u7cfb\\u578b\\u6570\\u636e\\u5e93\\u4e2d\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"Hive\\u7684\\u5143\\u6570\\u636e\\u5305\\u542b\\u8868\\u7684\\u540d\\u5b57\\u3001\\u8868\\u6570\\u636e\\u6240\\u5728HDFS\\u76ee\\u5f55\\u3001\\u8868\\u5c5e\\u6027\\u7b49\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"Hive\\u7684\\u8ba1\\u7b97\\u5f15\\u64ce\\u53ea\\u80fd\\u662fApache MapReduce\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"Hive\\u7684\\u5b58\\u50a8\\u5f15\\u64ce\\u53ef\\u4ee5\\u662fHDFS\\uff0c\\u4e5f\\u53ef\\u4ee5\\u662fHbase\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ABD \"}",
+    "key": "690661907273d0462cddeb6c485e4656",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u5217hiveQL\\u8bed\\u53e5\\u89e3\\u91ca\\u6b63\\u786e\\u7684\\u6709\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"load data local inpath \\u2018/usr/local/data\\u2019 overwrite into table usr; \\u5c06\\u672c\\u5730\\u76ee\\u5f55\\u7684\\u6587\\u4ef6\\u5199\\u5165\\u5230usr\\u8868\\u4e2d\\uff0c\\u5e76\\u8986\\u76d6usr\\u8868\\u4e2d\\u539f\\u6709\\u6570\\u636e\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"load data inpath \\u2019hdfs://localhost:9000/data\\u2019 overwrite into table usr; \\u5c06HDFS\\u76ee\\u5f55\\u4e0a\\u7684\\u6587\\u4ef6\\u5199\\u5165\\u5230usr\\u8868\\u4e2d\\uff0c\\u5e76\\u8986\\u76d6usr\\u8868\\u4e2d\\u539f\\u6709\\u6570\\u636e\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"load data inpath \\u2018/usr/local/data\\u2019 into table usr; \\u5c06\\u672c\\u5730\\u76ee\\u5f55\\u7684\\u6587\\u4ef6\\u5199\\u5165\\u5230usr\\u8868\\u4e2d\\uff0c\\u4e0d\\u8986\\u76d6usr\\u8868\\u4e2d\\u539f\\u6709\\u6570\\u636e\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"insert into table usr1 select * from usr where age=10; \\u5411\\u8868usr1\\u4e2d\\u63d2\\u5165\\u6765\\u81eausr\\u8868\\u7684\\u6570\\u636e\\u5e76\\u8ffd\\u52a0\\u5728\\u539f\\u6709\\u6570\\u636e\\u540e\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ABD \"}",
+    "key": "38860caaf7def98303989f31ff3ee98d",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4ee5\\u4e0b\\u5c5e\\u4e8eHive\\u7684\\u57fa\\u672c\\u6570\\u636e\\u7c7b\\u578b\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"TINYINT\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"FLOAT\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"BINARY\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"STRING\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ABCD \"}",
+    "key": "8cfb70ea34a2e0c3ef6c5dd4e3bfc715",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"HBase\\u548c\\u4f20\\u7edf\\u5173\\u7cfb\\u578b\\u6570\\u636e\\u5e93\\u7684\\u533a\\u522b\\u5728\\u4e8e\\u54ea\\u4e9b\\u65b9\\u9762\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u6570\\u636e\\u6a21\\u578b\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u6570\\u636e\\u7ef4\\u62a4\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u53ef\\u4f38\\u7f29\\u6027\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u5b58\\u50a8\\u6a21\\u5f0f\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ABCD \"}",
+    "key": "e73fdad73a8917ee4d1924af906c7504",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u8bbf\\u95eeHBase\\u8868\\u4e2d\\u7684\\u884c\\uff0c\\u6709\\u54ea\\u4e9b\\u65b9\\u5f0f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u901a\\u8fc7\\u5355\\u4e2a\\u884c\\u5065\\u8bbf\\u95ee\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u901a\\u8fc7\\u4e00\\u4e2a\\u884c\\u5065\\u7684\\u533a\\u95f4\\u6765\\u8bbf\\u95ee\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u5168\\u8868\\u626b\\u63cf\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u901a\\u8fc7\\u67d0\\u5217\\u7684\\u503c\\u533a\\u95f4\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ABC \"}",
+    "key": "7adbcb3ea82b5debb3ae27a39fc19585",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u5173\\u4e8eStore\\u7684\\u63cf\\u8ff0\\u6b63\\u786e\\u7684\\u6709\\uff1a\\n\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"Store\\u7531\\u4e00\\u4e2aMemStore\\u548c\\u82e5\\u5e72\\u4e2aStoreFile\\u7ec4\\u6210\\n\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u6570\\u636e\\u7684\\u8bfb\\u5199\\u90fd\\u662f\\u5148\\u8bbf\\u95eeMemStore\\n\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"Store\\u4e2d\\u53ef\\u4ee5\\u5b58\\u50a8\\u4efb\\u610f\\u591a\\u4e2aStoreFile\\n\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u591a\\u4e2aStore\\u53ef\\u4ee5\\u5b58\\u50a8\\u5728\\u4e00\\u4e2aRegion\\u4e2d\\n\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ABD \"}",
+    "key": "a4fe0fc9d7335a19e06bf34a19438002",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"Hive\\u7684\\u6570\\u636e\\u8868\\u53ef\\u4ee5\\u8fdb\\u884c\\u5206\\u533a\\u548c\\u5206\\u6876\\uff0c\\u5206\\u533a\\u8868\\u4e0b\\u9762\\u53ef\\u4ee5\\u518d\\u8fdb\\u884c\\u5206\\u6876\\uff0c\\u5206\\u6876\\u8868\\u4e0b\\u9762\\u4e5f\\u53ef\\u4ee5\\u8fdb\\u884c\\u518d\\u5206\\u533a\\u3002\", \"retMenu\": [], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a\\u00d7\"}",
+    "key": "f7c0d1ea5b6e776fa6209c965acd18f9",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"HBase\\u4e2d\\uff0cRegion\\u662f\\u5206\\u5e03\\u5f0f\\u5b58\\u50a8\\u7684\\u6700\\u5c0f\\u5355\\u5143\\uff0c\\u800cStore\\u662f\\u5b58\\u50a8\\u843d\\u76d8\\u7684\\u6700\\u5c0f\\u5355\\u5143\\u3002\\n\", \"retMenu\": [], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a\\u221a\"}",
+    "key": "23be503e49f83ffe5b9ae956fe8e1974",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u67d0\\u79cd\\u7a0b\\u5ea6\\u4e0a\\uff0c\\u53ef\\u4ee5\\u628aHive\\u770b\\u4f5c\\u662f\\u7528\\u6237\\u7f16\\u7a0b\\u63a5\\u53e3\\uff0c\\u5b83\\u672c\\u8eab\\u4e0d\\u5b58\\u50a8\\u548c\\u5904\\u7406\\u6570\\u636e\\u3002\", \"retMenu\": [], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a\\u221a\"}",
+    "key": "706e792ee69cb760a7cec9af0f9eeb5e",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"Hive\\u8ba1\\u7b97\\u5f15\\u64ce\\u53ef\\u4ee5\\u662fApache MapReduce\\u6216\\u8005Apache Spark\\u3002\", \"retMenu\": [], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a\\u221a\"}",
+    "key": "d1d259c4a43f66ccd5186bcc9368525d",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"Hive\\u652f\\u6301\\u6570\\u636e\\u7684\\u5b9e\\u65f6\\u66f4\\u65b0\\uff0c\\u6267\\u884c\\u5ef6\\u8fdf\\u4f4e\\u3002\", \"retMenu\": [], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a\\u00d7\"}",
+    "key": "220047cb8337680e064efb3b533880b3",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u5982\\u679c\\u8981\\u7528Hive\\u548c\\u5176\\u5b83\\u5de5\\u5177\\u6765\\u5904\\u7406\\u540c\\u4e00\\u4e2a\\u6570\\u636e\\u96c6\\uff0c\\u5efa\\u8bae\\u4f7f\\u7528\\u5185\\u90e8\\u8868\\u3002\", \"retMenu\": [], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a\\u00d7\"}",
+    "key": "eadbf846eb664042afec7418441d4157",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u9762\\u5173\\u4e8e\\u673a\\u5668\\u5b66\\u4e60\\u5904\\u7406\\u8fc7\\u7a0b\\u7684\\u63cf\\u8ff0\\uff0c\\u9519\\u8bef\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u5728\\u6570\\u636e\\u7684\\u57fa\\u7840\\u4e0a\\uff0c\\u901a\\u8fc7\\u7b97\\u6cd5\\u6784\\u5efa\\u51fa\\u6a21\\u578b\\u5e76\\u5bf9\\u6a21\\u578b\\u8fdb\\u884c\\u8bc4\\u4f30\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u8bc4\\u4f30\\u7684\\u6027\\u80fd\\u5982\\u679c\\u8fbe\\u5230\\u8981\\u6c42\\uff0c\\u5c31\\u7528\\u8be5\\u6a21\\u578b\\u6765\\u6d4b\\u8bd5\\u5176\\u4ed6\\u7684\\u6570\\u636e\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u8bc4\\u4f30\\u7684\\u6027\\u80fd\\u5982\\u679c\\u8fbe\\u4e0d\\u5230\\u8981\\u6c42\\uff0c\\u5c31\\u8981\\u8c03\\u6574\\u7b97\\u6cd5\\u6765\\u91cd\\u65b0\\u5efa\\u7acb\\u6a21\\u578b\\uff0c\\u518d\\u6b21\\u8fdb\\u884c\\u8bc4\\u4f30\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u901a\\u8fc7\\u7b97\\u6cd5\\u6784\\u5efa\\u51fa\\u7684\\u6a21\\u578b\\u4e0d\\u9700\\u8981\\u8bc4\\u4f30\\u5c31\\u53ef\\u4ee5\\u7528\\u4e8e\\u5176\\u4ed6\\u6570\\u636e\\u7684\\u6d4b\\u8bd5\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a D \"}",
+    "key": "15d37af2ac2da0e9bd3d102048804693",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u8981\\u628a\\u4e00\\u4e2aDataFrame\\u4fdd\\u5b58\\u5230people.json\\u6587\\u4ef6\\u4e2d\\uff0c\\u4e0b\\u9762\\u8bed\\u53e5\\u54ea\\u4e2a\\u662f\\u6b63\\u786e\\u7684\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"df.write.json(\\\"people.json\\\")\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"df.json(\\\"people.json\\\")\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"df.write.format(\\\"csv\\\").save(\\\"people.json\\\")\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"df.write.csv(\\\"people.json\\\")\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a A \"}",
+    "key": "702993c7bc5d5fed4a2115d97aaf2946",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u5217\\u5927\\u6570\\u636e\\u7c7b\\u578b\\u4e0e\\u5176\\u5bf9\\u5e94\\u7684\\u8f6f\\u4ef6\\u6846\\u67b6\\u4e0d\\u9002\\u5e94\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u56fe\\u7ed3\\u6784\\u6570\\u636e\\u7684\\u8ba1\\u7b97\\uff1aHive\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u57fa\\u4e8e\\u5b9e\\u65f6\\u6570\\u636e\\u6d41\\u7684\\u6570\\u636e\\u5904\\u7406\\uff1aStorm\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u590d\\u6742\\u7684\\u6279\\u91cf\\u6570\\u636e\\u5904\\u7406\\uff1aMapReduce\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u57fa\\u4e8e\\u5386\\u53f2\\u6570\\u636e\\u7684\\u4ea4\\u4e92\\u5f0f\\u67e5\\u8be2\\uff1aImpala\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a A \"}",
+    "key": "9f9ae587ec4cd1c01f1401cca44984e3",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u9762\\u5173\\u4e8e\\u673a\\u5668\\u5b66\\u4e60\\u6d41\\u6c34\\u7ebf(PipeLine)\\u7684\\u63cf\\u8ff0\\uff0c\\u9519\\u8bef\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u6d41\\u6c34\\u7ebf\\u5c06\\u591a\\u4e2a\\u5de5\\u4f5c\\u6d41\\u9636\\u6bb5\\uff08\\u8f6c\\u6362\\u5668\\u548c\\u8bc4\\u4f30\\u5668\\uff09\\u8fde\\u63a5\\u5728\\u4e00\\u8d77\\uff0c\\u5f62\\u6210\\u673a\\u5668\\u5b66\\u4e60\\u7684\\u5de5\\u4f5c\\u6d41\\uff0c\\u5e76\\u83b7\\u5f97\\u7ed3\\u679c\\u8f93\\u51fa\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u8981\\u6784\\u5efa\\u4e00\\u4e2a\\u673a\\u5668\\u5b66\\u4e60\\u6d41\\u6c34\\u7ebf\\uff0c\\u9996\\u5148\\u9700\\u8981\\u5b9a\\u4e49\\u6d41\\u6c34\\u7ebf\\u4e2d\\u7684\\u5404\\u4e2aPipelineStage\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"PipelineStage\\u79f0\\u4e3a\\u5de5\\u4f5c\\u6d41\\u9636\\u6bb5\\uff0c\\u5305\\u62ec\\u8f6c\\u6362\\u5668\\u548c\\u8bc4\\u4f30\\u5668\\uff0c\\u6bd4\\u5982\\u6307\\u6807\\u63d0\\u53d6\\u548c\\u8f6c\\u6362\\u6a21\\u578b\\u8bad\\u7ec3\\u7b49\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u6d41\\u6c34\\u7ebf\\u6784\\u5efa\\u597d\\u4ee5\\u540e\\uff0c\\u5c31\\u662f\\u4e00\\u4e2a\\u8f6c\\u6362\\u5668\\uff08Transformer\\uff09\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a D \"}",
+    "key": "0a5c46865b8388e1a4185d20607f4cef",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4ee5\\u4e0b\\u54ea\\u4e2a\\u4e0d\\u662fSpark\\u7684\\u7ec4\\u4ef6\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"Spark Streaming\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"MLlib\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"GraphX\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"Flink\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a D \"}",
+    "key": "4c45f3ef27a75f12f7af0449a58f92e8",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"Spark SQL\\u76ee\\u524d\\u6682\\u65f6\\u4e0d\\u652f\\u6301\\u4e0b\\u5217\\u54ea\\u79cd\\u8bed\\u8a00\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"Java\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"Scala\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"Matlab\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"Python\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a C \"}",
+    "key": "67736f43b3463bb2fba43bc2b700df4b",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u9762\\u54ea\\u4e2a\\u4e0d\\u662f RDD \\u7684\\u7279\\u70b9\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u53ef\\u5206\\u533a\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u53ef\\u5e8f\\u5217\\u5316\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u53ef\\u4fee\\u6539\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u53ef\\u6301\\u4e45\\u5316\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a C \"}",
+    "key": "cccd02c3c79de6ac6f2b4f57030d51e1",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u9762\\u5173\\u4e8e\\u8f6c\\u6362\\u5668\\uff08Transformer\\uff09\\u7684\\u63cf\\u8ff0\\u9519\\u8bef\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u8f6c\\u6362\\u5668\\u662f\\u4e00\\u79cd\\u53ef\\u4ee5\\u5c06\\u4e00\\u4e2aDataFrame\\u8f6c\\u6362\\u4e3a\\u53e6\\u4e00\\u4e2aDataFrame\\u7684\\u7b97\\u6cd5\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u6280\\u672f\\u4e0a\\uff0c\\u8f6c\\u6362\\u5668\\u5b9e\\u73b0\\u4e86\\u4e00\\u4e2a\\u65b9\\u6cd5fit()\\uff0c\\u5b83\\u901a\\u8fc7\\u9644\\u52a0\\u4e00\\u4e2a\\u6216\\u591a\\u4e2a\\u5217\\uff0c\\u5c06\\u4e00\\u4e2aDataFrame\\u8f6c\\u6362\\u4e3a\\u53e6\\u4e00\\u4e2aDataFrame\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u4e00\\u4e2a\\u6a21\\u578b\\u5c31\\u662f\\u4e00\\u4e2a\\u8f6c\\u6362\\u5668\\uff0c\\u5b83\\u628a\\u4e00\\u4e2a\\u4e0d\\u5305\\u542b\\u9884\\u6d4b\\u6807\\u7b7e\\u7684\\u6d4b\\u8bd5\\u6570\\u636e\\u96c6DataFrame\\u6253\\u4e0a\\u6807\\u7b7e\\uff0c\\u8f6c\\u5316\\u6210\\u53e6\\u4e00\\u4e2a\\u5305\\u542b\\u9884\\u6d4b\\u6807\\u7b7e\\u7684 DataFrame\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u6280\\u672f\\u4e0a\\uff0c\\u8f6c\\u6362\\u5668\\u5b9e\\u73b0\\u4e86\\u4e00\\u4e2a\\u65b9\\u6cd5transform()\\uff0c\\u5b83\\u901a\\u8fc7\\u9644\\u52a0\\u4e00\\u4e2a\\u6216\\u591a\\u4e2a\\u5217\\uff0c\\u5c06\\u4e00\\u4e2aDataFrame\\u8f6c\\u6362\\u4e3a\\u53e6\\u4e00\\u4e2aDataFrame\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a B \"}",
+    "key": "81d9dfcef234986a9a43602fc828b7b4",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u9762\\u5173\\u4e8eSpark SQL\\u67b6\\u6784\\u7684\\u63cf\\u8ff0\\u9519\\u8bef\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u5728Shark\\u539f\\u6709\\u7684\\u67b6\\u6784\\u4e0a\\u91cd\\u5199\\u4e86\\u903b\\u8f91\\u6267\\u884c\\u8ba1\\u5212\\u7684\\u4f18\\u5316\\u90e8\\u5206\\uff0c\\u89e3\\u51b3\\u4e86Shark\\u5b58\\u5728\\u7684\\u95ee\\u9898\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"Spark SQL\\u5728Hive\\u517c\\u5bb9\\u5c42\\u9762\\u4ec5\\u4f9d\\u8d56HiveQL\\u89e3\\u6790\\u548cHive\\u5143\\u6570\\u636e\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"Spark SQL\\u6267\\u884c\\u8ba1\\u5212\\u751f\\u6210\\u548c\\u4f18\\u5316\\u90fd\\u7531Catalyst\\uff08\\u51fd\\u6570\\u5f0f\\u5173\\u7cfb\\u67e5\\u8be2\\u4f18\\u5316\\u6846\\u67b6\\uff09\\u8d1f\\u8d23\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"Spark SQL\\u6267\\u884c\\u8ba1\\u5212\\u751f\\u6210\\u548c\\u4f18\\u5316\\u9700\\u8981\\u4f9d\\u8d56Hive\\u6765\\u5b8c\\u6210\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a D \"}",
+    "key": "6357cdf4687f3331055c4459e795290f",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4ee5\\u4e0b\\u64cd\\u4f5c\\u4e2d\\uff0c\\u54ea\\u4e2a\\u4e0d\\u662fDataFrame\\u7684\\u5e38\\u7528\\u64cd\\u4f5c\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"printSchema()\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"select()\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"filter()\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"sendto()\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a D \"}",
+    "key": "a29ce7b7417cd523bf9e4cae95d2bb0f",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u5173\\u4e8eShark\\uff0c\\u4e0b\\u9762\\u63cf\\u8ff0\\u6b63\\u786e\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"Shark\\u63d0\\u4f9b\\u4e86\\u7c7b\\u4f3cPig\\u7684\\u529f\\u80fd\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"Shark\\u628aSQL\\u8bed\\u53e5\\u8f6c\\u6362\\u6210MapReduce\\u4f5c\\u4e1a\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"Shark\\u91cd\\u7528\\u4e86Hive\\u4e2d\\u7684HiveQL\\u89e3\\u6790\\u3001\\u903b\\u8f91\\u6267\\u884c\\u8ba1\\u5212\\u7ffb\\u8bd1\\u3001\\u6267\\u884c\\u8ba1\\u5212\\u4f18\\u5316\\u7b49\\u903b\\u8f91\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"Shark\\u7684\\u6027\\u80fd\\u6bd4Hive\\u5dee\\u5f88\\u591a\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a C \"}",
+    "key": "aaee2c27e827bf7f45a1c7e7eee47ab5",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u9762\\u54ea\\u4e2a\\u64cd\\u4f5c\\u80af\\u5b9a\\u662f\\u5bbd\\u4f9d\\u8d56\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"map\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"filter\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"reduceByKey\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"union\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a C \"}",
+    "key": "b06881087d4c23b9907f33fd87c74fe1",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"RDD\\u64cd\\u4f5c\\u5206\\u4e3a\\u8f6c\\u6362\\uff08Transformation\\uff09\\u548c\\u52a8\\u4f5c\\uff08Action\\uff09\\u4e24\\u79cd\\u7c7b\\u578b\\uff0c\\u4e0b\\u5217\\u5c5e\\u4e8e\\u52a8\\u4f5c\\uff08Action\\uff09\\u7c7b\\u578b\\u7684\\u64cd\\u4f5c\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"groupBy\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"filter\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"count\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"map\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a C \"}",
+    "key": "470ee3e50bd616cd3cb3214377e9659b",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4ee5\\u4e0b\\u54ea\\u79cd\\u8fd0\\u7b97\\u5c5e\\u4e8e\\u5bbd\\u4f9d\\u8d56\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"map\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"filter\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"groupByKey\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"join\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a C \"}",
+    "key": "e44b579a981d545c65cf4efd4c0bbbf8",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"Task\\u662fExecutor\\u4e0a\\u7684\\u5de5\\u4f5c\\u5355\\u5143\\uff0c\\u8fd0\\u884c\\u4e8e\\u4e0b\\u9762\\u54ea\\u4e2a\\u7ec4\\u4ef6\\u4e0a\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"Driver Program\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"Spark Master\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"Worker Node\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"Cluster Manager\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a C \"}",
+    "key": "90638a00c382ad853d438488df4b8f77",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u9762\\u8bba\\u8ff0\\u4e2d\\u9519\\u8bef\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u673a\\u5668\\u5b66\\u4e60\\u548c\\u4eba\\u5de5\\u667a\\u80fd\\u662f\\u4e0d\\u5b58\\u5728\\u5173\\u8054\\u5173\\u7cfb\\u7684\\u4e24\\u4e2a\\u72ec\\u7acb\\u9886\\u57df\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u673a\\u5668\\u5b66\\u4e60\\u5f3a\\u8c03\\u4e09\\u4e2a\\u5173\\u952e\\u8bcd\\uff1a\\u7b97\\u6cd5\\u3001\\u7ecf\\u9a8c\\u3001\\u6027\\u80fd\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u63a8\\u8350\\u7cfb\\u7edf\\u3001\\u91d1\\u878d\\u53cd\\u6b3a\\u8bc8\\u3001\\u8bed\\u97f3\\u8bc6\\u522b\\u3001\\u81ea\\u7136\\u8bed\\u8a00\\u5904\\u7406\\u548c\\u673a\\u5668\\u7ffb\\u8bd1\\u3001\\u6a21\\u5f0f\\u8bc6\\u522b\\u3001\\u667a\\u80fd\\u63a7\\u5236\\u7b49\\u9886\\u57df\\uff0c\\u90fd\\u7528\\u5230\\u4e86\\u673a\\u5668\\u5b66\\u4e60\\u7684\\u77e5\\u8bc6\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u673a\\u5668\\u5b66\\u4e60\\u53ef\\u4ee5\\u770b\\u4f5c\\u662f\\u4e00\\u95e8\\u4eba\\u5de5\\u667a\\u80fd\\u7684\\u79d1\\u5b66\\uff0c\\u8be5\\u9886\\u57df\\u7684\\u4e3b\\u8981\\u7814\\u7a76\\u5bf9\\u8c61\\u662f\\u4eba\\u5de5\\u667a\\u80fd\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a A \"}",
+    "key": "a9752ba22c3de21ca232ddd7c319abb1",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u5217\\u5173\\u4e8e\\u5e38\\u89c1\\u7684\\u52a8\\u4f5c\\uff08Action\\uff09\\u548c\\u8f6c\\u6362\\uff08Transformation\\uff09\\u64cd\\u4f5c\\u7684API\\u89e3\\u91ca\\u9519\\u8bef\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"take(n)\\uff1a\\u8fd4\\u56de\\u6570\\u636e\\u96c6\\u4e2d\\u7684\\u7b2cn\\u4e2a\\u5143\\u7d20\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"map(func)\\uff1a\\u5c06\\u6bcf\\u4e2a\\u5143\\u7d20\\u4f20\\u9012\\u5230\\u51fd\\u6570func\\u4e2d\\uff0c\\u5e76\\u5c06\\u7ed3\\u679c\\u8fd4\\u56de\\u4e3a\\u4e00\\u4e2a\\u65b0\\u7684\\u6570\\u636e\\u96c6\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"filter(func)\\uff1a\\u7b5b\\u9009\\u51fa\\u6ee1\\u8db3\\u51fd\\u6570func\\u7684\\u5143\\u7d20\\uff0c\\u5e76\\u8fd4\\u56de\\u4e00\\u4e2a\\u65b0\\u7684\\u6570\\u636e\\u96c6\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"count()\\uff1a\\u8fd4\\u56de\\u6570\\u636e\\u96c6\\u4e2d\\u7684\\u5143\\u7d20\\u4e2a\\u6570\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a A \"}",
+    "key": "4dfe4ceae46fe5dc6a8939b5eb927860",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u9762\\u7684\\u8bba\\u8ff0\\u4e2d\\uff0c\\u6b63\\u786e\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u4f20\\u7edf\\u7684\\u673a\\u5668\\u5b66\\u4e60\\u7b97\\u6cd5\\uff0c\\u7531\\u4e8e\\u6280\\u672f\\u548c\\u5355\\u673a\\u5b58\\u50a8\\u7684\\u9650\\u5236\\uff0c\\u5927\\u591a\\u53ea\\u80fd\\u5728\\u5c11\\u91cf\\u6570\\u636e\\u4e0a\\u4f7f\\u7528\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u5229\\u7528MapReduce\\u6846\\u67b6\\u5728\\u5168\\u91cf\\u6570\\u636e\\u4e0a\\u8fdb\\u884c\\u673a\\u5668\\u5b66\\u4e60\\uff0c\\u8fd9\\u5728\\u4e00\\u5b9a\\u7a0b\\u5ea6\\u4e0a\\u89e3\\u51b3\\u4e86\\u7edf\\u8ba1\\u968f\\u673a\\u6027\\u7684\\u95ee\\u9898\\uff0c\\u63d0\\u9ad8\\u4e86\\u673a\\u5668\\u5b66\\u4e60\\u7684\\u7cbe\\u5ea6\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"MapReduce\\u53ef\\u4ee5\\u9ad8\\u6548\\u652f\\u6301\\u8fed\\u4ee3\\u8ba1\\u7b97\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"Spark\\u65e0\\u6cd5\\u9ad8\\u6548\\u652f\\u6301\\u8fed\\u4ee3\\u8ba1\\u7b97\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a AB \"}",
+    "key": "cfc47c98a7f6932f402fe776e28c1260",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u76ee\\u524d\\u7684\\u5927\\u6570\\u636e\\u5904\\u7406\\u5178\\u578b\\u5e94\\u7528\\u573a\\u666f\\u53ef\\u5206\\u4e3a\\u54ea\\u51e0\\u4e2a\\u7c7b\\u578b\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u590d\\u6742\\u7684\\u6279\\u91cf\\u6570\\u636e\\u5904\\u7406\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u57fa\\u4e8e\\u5386\\u53f2\\u6570\\u636e\\u7684\\u4ea4\\u4e92\\u5f0f\\u67e5\\u8be2\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u5927\\u6570\\u636e\\u7684\\u5206\\u5e03\\u5f0f\\u8ba1\\u7b97\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u57fa\\u4e8e\\u5b9e\\u65f6\\u6570\\u636e\\u6d41\\u7684\\u6570\\u636e\\u5904\\u7406\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ABD \"}",
+    "key": "14aa05a51c979b8cdb6f691293714772",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"Spark\\u7684\\u4e3b\\u8981\\u7279\\u70b9\\u5305\\u62ec\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u5bb9\\u6613\\u4f7f\\u7528\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u901a\\u7528\\u6027\\u597d\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u8fd0\\u884c\\u901f\\u5ea6\\u5feb\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u8fd0\\u884c\\u6a21\\u5f0f\\u591a\\u6837\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ABCD \"}",
+    "key": "c14f524b49995aaec582b1a7968ec07e",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4ee5\\u4e0b\\u9009\\u9879\\u4e2d\\u54ea\\u4e9b\\u662fSpark\\u7684\\u4f18\\u70b9\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u5177\\u6709\\u9ad8\\u6548\\u7684\\u5bb9\\u9519\\u6027\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u5229\\u7528\\u8fdb\\u7a0b\\u6a21\\u578b\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u53ef\\u4ee5\\u5c06\\u4e2d\\u95f4\\u7ed3\\u679c\\u6301\\u4e45\\u5316\\u5230\\u5185\\u5b58\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u8868\\u8fbe\\u80fd\\u529b\\u6709\\u9650\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a AC \"}",
+    "key": "5d7f76451ad16a54f4c89357d83cbf2f",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"Apache\\u8f6f\\u4ef6\\u57fa\\u91d1\\u4f1a\\u6700\\u91cd\\u8981\\u7684\\u4e09\\u5927\\u5206\\u5e03\\u5f0f\\u8ba1\\u7b97\\u7cfb\\u7edf\\u5f00\\u6e90\\u9879\\u76ee\\u5305\\u62ec\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"MapReduce\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"Hadoop\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"Spark\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"Storm\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a BCD \"}",
+    "key": "b50e412f7e283a17bbd87bd27b77953d",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4ee5\\u4e0b\\u662fSpark\\u7684\\u4e3b\\u8981\\u7279\\u70b9\\u7684\\u6709\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u8fd0\\u884c\\u901f\\u5ea6\\u5feb\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u5bb9\\u6613\\u4f7f\\u7528\\uff0c\\u7b80\\u6d01\\u7684API\\u8bbe\\u8ba1\\u6709\\u52a9\\u4e8e\\u7528\\u6237\\u8f7b\\u677e\\u6784\\u5efa\\u5e76\\u884c\\u7a0b\\u5e8f\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u901a\\u7528\\u6027\\uff0cSpark\\u63d0\\u4f9b\\u4e86\\u5b8c\\u6574\\u800c\\u5f3a\\u5927\\u7684\\u6280\\u672f\\u6808\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u8fd0\\u884c\\u6a21\\u5f0f\\u591a\\u6837\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ABCD \"}",
+    "key": "ca200ff842eb4e52d2e7039b7a7f428f",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"Spark\\u7684\\u8fd0\\u884c\\u67b6\\u6784\\u5305\\u62ec\\u54ea\\u4e9b\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u96c6\\u7fa4\\u8d44\\u6e90\\u7ba1\\u7406\\u5668\\uff08Cluster Manager\\uff09\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u6267\\u884c\\u8fdb\\u7a0b\\uff08Executor\\uff09\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"Worker Node\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u4efb\\u52a1\\u63a7\\u5236\\u8282\\u70b9Driver Program\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ABCD \"}",
+    "key": "663fb5cd63505ba18ebc0998f1b705c8",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u9762\\u5173\\u4e8e\\u4e3a\\u4ec0\\u4e48\\u63a8\\u51faSpark SQL\\u7684\\u539f\\u56e0\\u7684\\u63cf\\u8ff0\\u6b63\\u786e\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"Spark SQL\\u53ef\\u4ee5\\u63d0\\u4f9bDataFrame API\\uff0c\\u53ef\\u4ee5\\u5bf9\\u5185\\u90e8\\u548c\\u5916\\u90e8\\u5404\\u79cd\\u6570\\u636e\\u6e90\\u6267\\u884c\\u5404\\u79cd\\u5173\\u7cfb\\u64cd\\u4f5c\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u53ef\\u4ee5\\u652f\\u6301\\u5927\\u91cf\\u7684\\u6570\\u636e\\u6e90\\u548c\\u6570\\u636e\\u5206\\u6790\\u7b97\\u6cd5\\uff0c\\u7ec4\\u5408\\u4f7f\\u7528Spark SQL\\u548cSpark MLlib\\uff0c\\u53ef\\u4ee5\\u878d\\u5408\\u4f20\\u7edf\\u5173\\u7cfb\\u6570\\u636e\\u5e93\\u7684\\u7ed3\\u6784\\u5316\\u6570\\u636e\\u7ba1\\u7406\\u80fd\\u529b\\u548c\\u673a\\u5668\\u5b66\\u4e60\\u7b97\\u6cd5\\u7684\\u6570\\u636e\\u5904\\u7406\\u80fd\\u529b\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"Spark SQL\\u65e0\\u6cd5\\u5bf9\\u5404\\u79cd\\u4e0d\\u540c\\u7684\\u6570\\u636e\\u6e90\\u8fdb\\u884c\\u6574\\u5408\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"Spark SQL\\u65e0\\u6cd5\\u878d\\u5408\\u7ed3\\u6784\\u5316\\u6570\\u636e\\u7ba1\\u7406\\u80fd\\u529b\\u548c\\u673a\\u5668\\u5b66\\u4e60\\u7b97\\u6cd5\\u7684\\u6570\\u636e\\u5904\\u7406\\u80fd\\u529b\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a AC \"}",
+    "key": "8b2db856d0e3d5566dbc19ad4cd44e95",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4ee5\\u4e0b\\u5c5e\\u4e8eRDD\\u7684\\u7279\\u6027\\u7684\\u6709\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"RDD\\u7684\\u4e2d\\u95f4\\u7ed3\\u679c\\u4f1a\\u6301\\u4e45\\u5316\\u5230\\u5185\\u5b58\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"RDD\\u91c7\\u7528lineage\\u673a\\u5236\\u5b9e\\u73b0\\u9ad8\\u6548\\u5bb9\\u9519\\u6027\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"RDD\\u91c7\\u7528\\u6570\\u636e\\u5197\\u4f59\\u5b58\\u50a8\\u65b9\\u5f0f\\u5b9e\\u73b0\\u5bb9\\u9519\\u6027\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"RDD\\u5b58\\u653e\\u7684\\u6570\\u636e\\u53ef\\u4ee5\\u662f\\u672a\\u5e8f\\u5217\\u5316\\u7684java\\u5bf9\\u8c61\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ABD \"}",
+    "key": "e96b569d445c055d6fa008fccd6228a9",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4f7f\\u7528\\u7f16\\u7a0b\\u65b9\\u5f0f\\u5b9a\\u4e49RDD\\u6a21\\u5f0f\\u65f6\\uff0c\\u4e3b\\u8981\\u5305\\u62ec\\u54ea\\u4e09\\u4e2a\\u6b65\\u9aa4\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u5236\\u4f5c\\u201c\\u8868\\u5934\\u201d\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u5236\\u4f5c\\u201c\\u8868\\u4e2d\\u7684\\u8bb0\\u5f55\\u201d\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u5236\\u4f5c\\u6620\\u5c04\\u8868\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u628a\\u201c\\u8868\\u5934\\u201d\\u548c\\u201c\\u8868\\u4e2d\\u7684\\u8bb0\\u5f55\\u201d\\u62fc\\u88c5\\u5728\\u4e00\\u8d77\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ABD \"}",
+    "key": "e013eff7c1e74a72531e6e35fe869ae1",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"Spark\\u7684\\u8fd0\\u884c\\u67b6\\u6784\\u5305\\u62ec\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u96c6\\u7fa4\\u8d44\\u6e90\\u7ba1\\u7406\\u5668 Cluster Manager\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u8fd0\\u884c\\u4f5c\\u4e1a\\u4efb\\u52a1\\u7684\\u5de5\\u4f5c\\u8282\\u70b9 Worker Node\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u6bcf\\u4e2a\\u5de5\\u4f5c\\u8282\\u70b9\\u4e0a\\u8d1f\\u8d23\\u5177\\u4f53\\u4efb\\u52a1\\u7684\\u6267\\u884c\\u8fdb\\u7a0b Executor\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u6bcf\\u4e2a\\u5e94\\u7528\\u7684\\u4efb\\u52a1\\u63a7\\u5236\\u8282\\u70b9 Driver\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ABCD \"}",
+    "key": "00222c63986e527c7fd647b7d17f36d8",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u5173\\u4e8eRDD\\u7684\\u8bf4\\u6cd5\\u6b63\\u786e\\u7684\\u6709\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"RDD\\u662f\\u4e00\\u4e2a\\u5f39\\u6027\\u5206\\u5e03\\u5f0f\\u6570\\u636e\\u96c6\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"RDD\\u7684\\u6570\\u636e\\u53ef\\u4ee5\\u4fee\\u6539\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"RDD\\u53ef\\u4ee5\\u5206\\u6210\\u591a\\u4e2a\\u5206\\u533a\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"RDD\\u4e0d\\u4ec5\\u652f\\u6301\\u6570\\u636e\\u96c6\\u7684\\u7c97\\u7c92\\u5ea6\\u64cd\\u4f5c\\uff0c\\u4e5f\\u652f\\u6301\\u6570\\u636e\\u9879\\u7684\\u7ec6\\u7c92\\u5ea6\\u64cd\\u4f5c\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a AC \"}",
+    "key": "fd55fbe2a7fb6b40662496406393e834",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u9762\\u5173\\u4e8eSpark MLlib\\u5e93\\u7684\\u63cf\\u8ff0\\u6b63\\u786e\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"MLlib\\u5e93\\u4ece1.2\\u7248\\u672c\\u4ee5\\u540e\\u5206\\u4e3a\\u4e24\\u4e2a\\u5305\\uff1aspark.mllib\\u548cspark.ml\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"spark.mllib\\u5305\\u542b\\u57fa\\u4e8eDataFrame\\u7684\\u539f\\u59cb\\u7b97\\u6cd5API\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"spark.mllib\\u5305\\u542b\\u57fa\\u4e8eRDD\\u7684\\u539f\\u59cb\\u7b97\\u6cd5API\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"spark.ml\\u5219\\u63d0\\u4f9b\\u4e86\\u57fa\\u4e8eRDD\\u7684\\u3001\\u9ad8\\u5c42\\u6b21\\u7684API\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a AC \"}",
+    "key": "7c8c3facec5478ac9d39bdadfb6977ca",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"Shark\\u7684\\u8bbe\\u8ba1\\u5bfc\\u81f4\\u4e86\\u4e24\\u4e2a\\u95ee\\u9898\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u6267\\u884c\\u8ba1\\u5212\\u4f18\\u5316\\u5b8c\\u5168\\u4f9d\\u8d56\\u4e8eHive\\uff0c\\u4e0d\\u65b9\\u4fbf\\u6dfb\\u52a0\\u65b0\\u7684\\u4f18\\u5316\\u7b56\\u7565\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u6267\\u884c\\u8ba1\\u5212\\u4f18\\u5316\\u4e0d\\u4f9d\\u8d56\\u4e8eHive\\uff0c\\u65b9\\u4fbf\\u6dfb\\u52a0\\u65b0\\u7684\\u4f18\\u5316\\u7b56\\u7565\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"Spark\\u662f\\u7ebf\\u7a0b\\u7ea7\\u5e76\\u884c\\uff0c\\u800cMapReduce\\u662f\\u8fdb\\u7a0b\\u7ea7\\u5e76\\u884c\\uff0c\\u56e0\\u6b64\\uff0cSpark\\u5728\\u517c\\u5bb9Hive\\u7684\\u5b9e\\u73b0\\u4e0a\\u5b58\\u5728\\u7ebf\\u7a0b\\u5b89\\u5168\\u95ee\\u9898\\uff0c\\u5bfc\\u81f4Shark\\u4e0d\\u5f97\\u4e0d\\u4f7f\\u7528\\u53e6\\u5916\\u4e00\\u5957\\u72ec\\u7acb\\u7ef4\\u62a4\\u7684\\u3001\\u6253\\u4e86\\u8865\\u4e01\\u7684Hive\\u6e90\\u7801\\u5206\\u652f\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"Spark\\u662f\\u8fdb\\u7a0b\\u7ea7\\u5e76\\u884c\\uff0c\\u800cMapReduce\\u662f\\u7ebf\\u7a0b\\u7ea7\\u5e76\\u884c\\uff0c\\u56e0\\u6b64\\uff0cSpark\\u5728\\u517c\\u5bb9Hive\\u7684\\u5b9e\\u73b0\\u4e0a\\u5b58\\u5728\\u7ebf\\u7a0b\\u5b89\\u5168\\u95ee\\u9898\\uff0c\\u5bfc\\u81f4Shark\\u4e0d\\u5f97\\u4e0d\\u4f7f\\u7528\\u53e6\\u5916\\u4e00\\u5957\\u72ec\\u7acb\\u7ef4\\u62a4\\u7684\\u3001\\u6253\\u4e86\\u8865\\u4e01\\u7684Hive\\u6e90\\u7801\\u5206\\u652f\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a AC \"}",
+    "key": "4be6f541ec6c911153b0fae16a8fa7d9",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"Spark\\u53ef\\u4ee5\\u91c7\\u7528\\u51e0\\u79cd\\u4e0d\\u540c\\u7684\\u90e8\\u7f72\\u65b9\\u5f0f\\uff0c\\u4ee5\\u4e0b\\u6b63\\u786e\\u7684\\u90e8\\u7f72\\u65b9\\u5f0f\\u6709\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"Local\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"Standalone\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"Spark on Mesos\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"Spark on YARN\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ABCD \"}",
+    "key": "89a111f9ff63eefff4737f8a677ff810",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4eceRDD\\u8f6c\\u6362\\u5f97\\u5230DataFrame\\u5305\\u542b\\u4e24\\u79cd\\u5178\\u578b\\u65b9\\u6cd5\\uff0c\\u5206\\u522b\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u5229\\u7528\\u53cd\\u5c04\\u673a\\u5236\\u63a8\\u65adRDD\\u6a21\\u5f0f\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u4f7f\\u7528\\u7f16\\u7a0b\\u65b9\\u5f0f\\u5b9a\\u4e49RDD\\u6a21\\u5f0f\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u5229\\u7528\\u6295\\u5f71\\u673a\\u5236\\u63a8\\u65adRDD\\u6a21\\u5f0f\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u5229\\u7528\\u4e92\\u8054\\u673a\\u5236\\u63a8\\u65adRDD\\u6a21\\u5f0f\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a AB \"}",
+    "key": "9a9caf2a7f5db53cc8f43e6107089801",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u9762\\u5173\\u4e8eDataFrame\\u7684\\u63cf\\u8ff0\\u6b63\\u786e\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"DataFrame\\u7684\\u63a8\\u51fa\\uff0c\\u8ba9Spark\\u5177\\u5907\\u4e86\\u5904\\u7406\\u5927\\u89c4\\u6a21\\u7ed3\\u6784\\u5316\\u6570\\u636e\\u7684\\u80fd\\u529b\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"DataFrame\\u6bd4\\u539f\\u6709\\u7684RDD\\u8f6c\\u5316\\u65b9\\u5f0f\\u66f4\\u52a0\\u7b80\\u5355\\u6613\\u7528\\uff0c\\u800c\\u4e14\\u83b7\\u5f97\\u4e86\\u66f4\\u9ad8\\u7684\\u8ba1\\u7b97\\u6027\\u80fd\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"Spark\\u80fd\\u591f\\u8f7b\\u677e\\u5b9e\\u73b0\\u4eceMySQL\\u5230DataFrame\\u7684\\u8f6c\\u5316\\uff0c\\u5e76\\u4e14\\u652f\\u6301SQL\\u67e5\\u8be2\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"DataFrame\\u662f\\u4e00\\u79cd\\u4ee5RDD\\u4e3a\\u57fa\\u7840\\u7684\\u5206\\u5e03\\u5f0f\\u6570\\u636e\\u96c6\\uff0c\\u63d0\\u4f9b\\u4e86\\u8be6\\u7ec6\\u7684\\u7ed3\\u6784\\u4fe1\\u606f\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ABCD \"}",
+    "key": "da467f1dabe1c95e5e917823bc3e2cac",
+    "name": "华雯妍"
+  },
+  {
+    "content": "{\"title\": \"\\u4ee5\\u4e0b\\u54ea\\u4e2a\\u4e0d\\u662fHadoop2.X\\u7684\\u7279\\u70b9\\uff1f\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u5177\\u6709\\u4e24\\u4e2aNameNode\\uff0c\\u53ef\\u4ee5\\u6539\\u8fdb\\u5355\\u4e2aNameNode\\u5355\\u70b9\\u6545\\u969c\\u95ee\\u9898\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u5c06MapReduce\\u4e2d\\u8d44\\u6e90\\u7ba1\\u7406\\u548c\\u4f5c\\u4e1a\\u63a7\\u5236\\u5206\\u5f00\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"ResourceManager\\u8d1f\\u8d23\\u6240\\u6709\\u5e94\\u7528\\u7a0b\\u5e8f\\u7684\\u8d44\\u6e90\\u5206\\u914d\\uff0cApplicationMaster\\u8d1f\\u8d23\\u7ba1\\u7406\\u4e00\\u4e2a\\u5e94\\u7528\\u7a0b\\u5e8f\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"Yarn\\u4ec5\\u53ef\\u4e3aMapReduce\\u8ba1\\u7b97\\u6846\\u67b6\\u63d0\\u4f9b\\u670d\\u52a1\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a D \"}",
+    "key": "18696ff6052df36b9361e6961abc20bb",
+    "name": "张智强"
+  },
+  {
+    "content": "{\"title\": \"\\u4ee5\\u4e0b\\u63cf\\u8ff0\\u9519\\u8bef\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"edits\\u6587\\u4ef6\\u4fdd\\u5b58\\u7684\\u662f\\u81ea\\u6700\\u65b0\\u68c0\\u67e5\\u70b9\\u4e4b\\u540e\\u7684\\u6240\\u6709\\u6587\\u4ef6\\u66f4\\u65b0\\u64cd\\u4f5c\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"edits\\u6587\\u4ef6\\u7684\\u5927\\u5c0f\\u5bf9\\u4e8e\\u91cd\\u542fNameNode\\u662f\\u6ca1\\u6709\\u5f71\\u54cd\\u7684\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"fsimage\\u6587\\u4ef6\\u4fdd\\u5b58\\u7684\\u5185\\u5bb9\\u6709\\uff1a\\u6587\\u4ef6\\u76ee\\u5f55\\u4fe1\\u606f\\u3001\\u6587\\u4ef6\\u526f\\u672c\\u6570\\u3001Block\\u4e0eDataNode\\u6620\\u5c04\\u5173\\u7cfb\\u7b49\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"Standby NameNode\\u4f1a\\u5b9a\\u671f\\u5408\\u5e76edits\\u548cfsimage\\uff0c\\u5e76\\u8fd4\\u56de\\u7ed9Active NameNode\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a B \"}",
+    "key": "3fd55ada7e878a22618f64660b2db36c",
+    "name": "张智强"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u9762\\u5173\\u4e8e\\u5206\\u5e03\\u5f0f\\u6587\\u4ef6\\u7cfb\\u7edfHDFS\\u7684\\u63cf\\u8ff0\\u6b63\\u786e\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u5206\\u5e03\\u5f0f\\u6587\\u4ef6\\u7cfb\\u7edfHDFS\\u662f\\u4e00\\u79cd\\u5173\\u7cfb\\u578b\\u6570\\u636e\\u5e93\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u5206\\u5e03\\u5f0f\\u6587\\u4ef6\\u7cfb\\u7edfHDFS\\u662fGoogle Bigtable\\u7684\\u4e00\\u79cd\\u5f00\\u6e90\\u5b9e\\u73b0\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u5206\\u5e03\\u5f0f\\u6587\\u4ef6\\u7cfb\\u7edfHDFS\\u662f\\u8c37\\u6b4c\\u5206\\u5e03\\u5f0f\\u6587\\u4ef6\\u7cfb\\u7edfGFS\\uff08Google File System\\uff09\\u7684\\u4e00\\u79cd\\u5f00\\u6e90\\u5b9e\\u73b0\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u5206\\u5e03\\u5f0f\\u6587\\u4ef6\\u7cfb\\u7edfHDFS\\u6bd4\\u8f83\\u9002\\u5408\\u5b58\\u50a8\\u5927\\u91cf\\u96f6\\u788e\\u7684\\u5c0f\\u6587\\u4ef6\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a C \"}",
+    "key": "f0b3d35890c3017df72933e275becf77",
+    "name": "张智强"
+  },
+  {
+    "content": "{\"title\": \"\\u514b\\u9686\\u865a\\u62df\\u673a\\u540e\\u9700\\u8981\\u4fee\\u6539\\u7684\\u6587\\u4ef6\\u6709\\uff1a\\n\\n\\uff081\\uff09/etc/udev/rules.d/70-persistent-net\\n\\n\\uff082\\uff09/etc/sysconfig/network-scripts/ifcfg-ens33\\n\\n\\uff083\\uff09/etc/sysconfig/network\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u2460\\u2461\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u2460\\u2461\\u2462\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u2461\\u2462\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u2460\\u2462\"}, {\"xx\": \"E\\u3001\", \"xxContent\": \"\\u65e0\\n\"}, {\"xx\": \"F\\u3001\", \"xxContent\": \"5\"}, {\"xx\": \"G\\u3001\", \"xxContent\": \"0\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a C \"}",
+    "key": "dc9554b3c4c917fb42e9800deb4550a8",
+    "name": "张智强"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u5217\\u547d\\u4ee4\\u53ef\\u4ee5\\u663e\\u793a\\u51faHDFS\\u6587\\u4ef6\\u7cfb\\u7edf\\u4e2d /user/root/ \\u76ee\\u5f55\\u60c5\\u51b5\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"hdfs dfs \\u2013dir /user/root/\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"hdfs dfs \\u2013report /user/root/\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"hdfs dfs \\u2013ls /user/root/\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"hdfs dfs \\u2013display /user/root/\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a C \"}",
+    "key": "d8f6eb99e75191d13a079b42409353cc",
+    "name": "张智强"
+  },
+  {
+    "content": "{\"title\": \"\\u5bf9\\u4e8e\\u6587\\u672c\\u884c\\u201chello hadoop hello world\\u201d\\uff0c\\u7ecf\\u8fc7WordCount\\u7684Reduce\\u51fd\\u6570\\u5904\\u7406\\u540e\\u7684\\u7ed3\\u679c\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"<\\\"hello\\\",1,1><\\\"hadoop\\\",1><\\\"world\\\",1>\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"<\\\"hello\\\",2><\\\"hadoop\\\",1><\\\"world\\\",1>\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"<\\\"hello\\\",<1,1>><\\\"hadoop\\\",1><\\\"world\\\",1>\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"<\\\"hello\\\",1><\\\"hello\\\",1><\\\"hadoop\\\",1><\\\"world\\\",1>\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a B \"}",
+    "key": "7986e69f7bad9fdcfd0f508c94db45a1",
+    "name": "张智强"
+  },
+  {
+    "content": "{\"title\": \"\\u5206\\u5e03\\u5f0f\\u6587\\u4ef6\\u7cfb\\u7edfHDFS\\u91c7\\u7528\\u4e86\\u4e3b\\u4ece\\u7ed3\\u6784\\u6a21\\u578b\\uff0c\\u7531\\u8ba1\\u7b97\\u673a\\u96c6\\u7fa4\\u4e2d\\u7684\\u591a\\u4e2a\\u8282\\u70b9\\u6784\\u6210\\u7684\\uff0c\\u8fd9\\u4e9b\\u8282\\u70b9\\u5206\\u4e3a\\u4e24\\u7c7b\\uff0c\\u4e00\\u7c7b\\u5b58\\u50a8\\u5143\\u6570\\u636e\\u53eb \\uff0c\\u53e6\\u4e00\\u7c7b\\u5b58\\u50a8\\u5177\\u4f53\\u6570\\u636e\\u53eb\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u540d\\u79f0\\u8282\\u70b9\\uff0c\\u4e3b\\u8282\\u70b9\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u4ece\\u8282\\u70b9\\uff0c\\u4e3b\\u8282\\u70b9\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u6570\\u636e\\u8282\\u70b9\\uff0c\\u540d\\u79f0\\u8282\\u70b9\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u540d\\u79f0\\u8282\\u70b9\\uff0c\\u6570\\u636e\\u8282\\u70b9\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a D \"}",
+    "key": "303df80e8c48aa55f94eafa22d1347fd",
+    "name": "张智强"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u5217\\u547d\\u4ee4\\u53ef\\u4ee5\\u5c06HDFS\\u6587\\u4ef6\\u7cfb\\u7edf/user/root/\\u76ee\\u5f55\\u4e0b\\u7684live.txt\\u6587\\u4ef6\\u4e0b\\u8f7d\\u5230\\u672c\\u5730/opt\\u76ee\\u5f55\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"hadoop fs \\u2013get /user/root/live.txt /opt\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"hadoop fs \\u2013download /user/root/live.txt /opt\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"hadoop fs \\u2013put /user/root/live.txt /opt\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"hadoop fs \\u2013move /user/root/live.txt /opt\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a A \"}",
+    "key": "98842bff346388e99f7efb3403083b4b",
+    "name": "张智强"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u5217\\u5173\\u4e8eMapReduce\\u6846\\u67b6\\u8bf4\\u6cd5\\u9519\\u8bef\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u8f93\\u5165MapReduce\\u7684\\u6570\\u636e\\u5fc5\\u987b\\u4e3a\\u952e\\u503c\\u5bf9\\u7c7b\\u578b\\uff0c\\u4f46MapReduce\\u4e0d\\u53ef\\u4ee5\\u5c06\\u6570\\u636e\\u8f6c\\u6362\\u4e3a\\u952e\\u503c\\u5bf9\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u5728Mapper\\u9636\\u6bb5\\u5b8c\\u6210\\u540e\\u6570\\u636e\\u4f1a\\u4f20\\u5165\\u73af\\u5f62\\u7f13\\u51b2\\u533a\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"MapReduce\\u4e2d\\u6839\\u636e\\u952e\\u503c\\u5bf9\\u8fdb\\u884c\\u5206\\u7ec4\\u7684\\u6b65\\u9aa4\\u5728Shuffle\\u9636\\u6bb5\\u8fdb\\u884c\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u5728\\u4e0d\\u8bbe\\u7f6e\\u5206\\u533a\\u7684\\u60c5\\u51b5\\u4e0b\\uff0cMapReduce\\u7684\\u7ed3\\u679c\\u6587\\u4ef6\\u4e3a\\u4e00\\u4e2a\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a AD \"}",
+    "key": "01fb67e3a6c56043841bcb066cebca01",
+    "name": "张智强"
+  },
+  {
+    "content": "{\"title\": \"\\u5bf9\\u4e8eshuffle\\u9636\\u6bb5\\u7684\\u63cf\\u8ff0\\u6b63\\u786e\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"shuffle\\u9636\\u6bb5\\u4f1a\\u6267\\u884cpartition\\u3001sort\\u3001merge\\u7b49\\u5de5\\u4f5c\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"shuffle\\u9636\\u6bb5\\u7684partition\\u6570\\u91cf\\u662f\\u7531Map\\u4efb\\u52a1\\u7684\\u7ed3\\u679c\\u6570\\u91cf\\u51b3\\u5b9a\\u7684\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"shuffle\\u9636\\u6bb5\\u7684\\u4efb\\u52a1\\u662f\\u7531MapReduce\\u6846\\u67b6\\u81ea\\u8eab\\u5b8c\\u6210\\u7684\\uff0c\\u4e0d\\u9700\\u8981\\u7528\\u6237\\u5e72\\u9884\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"shuffle\\u9636\\u6bb5\\u7684\\u4efb\\u52a1\\u662f\\u5728\\u7f13\\u5b58\\u4e0a\\u8fdb\\u884c\\u7684\\uff0c\\u5982\\u679c\\u6587\\u4ef6\\u5f88\\u5927\\uff0c\\u4f1aspill\\u5230\\u78c1\\u76d8\\u4e0a\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ACD \"}",
+    "key": "4c3a8e678af701b96f8825da566e7f5d",
+    "name": "张智强"
+  },
+  {
+    "content": "{\"title\": \"Hadoop\\u4e2d\\u7684YARN\\u662f\\u57282.x\\u7248\\u672c\\u540e\\u52a0\\u5165\\u7684\\u3002\", \"retMenu\": [], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a\\u221a\"}",
+    "key": "852928007bc7ce59fd0da80b30c00693",
+    "name": "张智强"
+  },
+  {
+    "content": "{\"title\": \"MapReduce\\u7a0b\\u5e8f\\u4e2d\\u7684\\u6570\\u636e\\u7c7b\\u578bText\\u7c7b\\u4f3c\\u4e8eString\\uff0c\\u4f7f\\u7528\\u8fd9\\u4e00\\u6570\\u636e\\u7c7b\\u578b\\u7684\\u6570\\u636e\\u4e3aUTF-8\\u683c\\u5f0f\\u7684\\u6587\\u672c\\u6570\\u636e\\u3002\", \"retMenu\": [], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a\\u221a\"}",
+    "key": "c3fbfa0dc88b83c800b30b4e78739bf9",
+    "name": "张智强"
+  },
+  {
+    "content": "{\"title\": \"Hadoop\\u652f\\u6301\\u6570\\u636e\\u7684\\u968f\\u673a\\u8bfb\\u5199\\u3002\", \"retMenu\": [], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a\\u00d7\"}",
+    "key": "50bc52872ba55621c44c6a8de45bef42",
+    "name": "张智强"
+  },
+  {
+    "content": "{\"title\": \"\\u5728YARN\\u6846\\u67b6\\u4e2d\\uff0cApplication Master\\u7684\\u4ea7\\u751f\\u662f\\u5728\\u4efb\\u52a1\\u5f00\\u59cb\\u7684\\u8282\\u70b9\\uff0c\\u800c\\u4e0d\\u662fResource Manager\\u6240\\u5728\\u8282\\u70b9\\u3002\", \"retMenu\": [], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a\\u221a\"}",
+    "key": "4b6ab97c3f1a36844594b55589bb57e8",
+    "name": "张智强"
+  },
+  {
+    "content": "{\"title\": \"HDFS Shell\\u53ef\\u4ee5\\u5728\\u975e\\u96c6\\u7fa4\\u8282\\u70b9\\u4e0a\\u8fd0\\u884c\\u3002\", \"retMenu\": [], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a\\u00d7\"}",
+    "key": "3bd1a4d200c7a3de079a8cfa328798f5",
+    "name": "张智强"
+  },
+  {
+    "content": "{\"title\": \"\\u4e24\\u4e2a\\u952e\\u503c\\u5bf9<\\\"a\\\",1>\\u548c<\\\"a\\\",1>\\uff0c\\u5982\\u679c\\u5bf9\\u5176\\u8fdb\\u884c\\u5f52\\u5e76(merge)\\uff0c\\u4f1a\\u5f97\\u5230<\\\"a\\\",2>\\uff0c\\u5982\\u679c\\u5bf9\\u5176\\u8fdb\\u884c\\u5408\\u5e76(combine)\\uff0c\\u4f1a\\u5f97\\u5230<\\\"a\\\",<1,1>>\\u3002\", \"retMenu\": [], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a\\u00d7\"}",
+    "key": "c4880cd45d1f26ee8887f49ee6a1f02c",
+    "name": "张智强"
+  },
+  {
+    "content": "{\"title\": \"HBase\\u4e09\\u5c42\\u7ed3\\u6784\\u7684\\u987a\\u5e8f\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \".MEATA.\\u8868\\uff0cZookeeper\\u6587\\u4ef6\\uff0c-ROOT-\\u8868\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"-ROOT-\\u8868\\uff0cZookeeper\\u6587\\u4ef6\\uff0c.MEATA.\\u8868\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"Zookeeper\\u6587\\u4ef6\\uff0c.MEATA.\\u8868\\uff0c-ROOT-\\u8868\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"Zookeeper\\u6587\\u4ef6\\uff0c-ROOT-\\u8868\\uff0c.MEATA.\\u8868\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a D \"}",
+    "key": "c279db8f8bbd8407157c65dd2b3b9a3a",
+    "name": "张智强"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u9762\\u5173\\u4e8e\\u8bc4\\u4f30\\u5668\\uff08Estimator\\uff09\\u7684\\u63cf\\u8ff0\\u9519\\u8bef\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u8bc4\\u4f30\\u5668\\u662f\\u5b66\\u4e60\\u7b97\\u6cd5\\u6216\\u5728\\u8bad\\u7ec3\\u6570\\u636e\\u4e0a\\u7684\\u8bad\\u7ec3\\u65b9\\u6cd5\\u7684\\u6982\\u5ff5\\u62bd\\u8c61\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u5728\\u673a\\u5668\\u5b66\\u4e60\\u6d41\\u6c34\\u7ebf\\u91cc\\uff0c\\u8bc4\\u4f30\\u5668\\u901a\\u5e38\\u662f\\u88ab\\u7528\\u6765\\u64cd\\u4f5c DataFrame\\u6570\\u636e\\u5e76\\u751f\\u6210\\u4e00\\u4e2a\\u8f6c\\u6362\\u5668\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u8bc4\\u4f30\\u5668\\u5b9e\\u73b0\\u4e86\\u65b9\\u6cd5transfrom()\\uff0c\\u5b83\\u63a5\\u53d7\\u4e00\\u4e2aDataFrame\\u5e76\\u4ea7\\u751f\\u4e00\\u4e2a\\u8f6c\\u6362\\u5668\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u8bc4\\u4f30\\u5668\\u5b9e\\u73b0\\u4e86\\u65b9\\u6cd5fit()\\uff0c\\u5b83\\u63a5\\u53d7\\u4e00\\u4e2aDataFrame\\u5e76\\u4ea7\\u751f\\u4e00\\u4e2a\\u8f6c\\u6362\\u5668\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a C \"}",
+    "key": "9ef5e00eb72eefdf1268bedcb8a5fa3c",
+    "name": "张智强"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u9762\\u8bba\\u8ff0\\u4e2d\\u6b63\\u786e\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"DataFrame\\u53ef\\u5bb9\\u7eb3\\u5404\\u79cd\\u6570\\u636e\\u7c7b\\u578b\\uff0c\\u4e0eRDD\\u6570\\u636e\\u96c6\\u76f8\\u6bd4\\uff0c\\u5b83\\u5305\\u542b\\u4e86\\u6a21\\u5f0f\\uff08schema\\uff09\\u4fe1\\u606f\\uff0c\\u7c7b\\u4f3c\\u4e8e\\u4f20\\u7edf\\u6570\\u636e\\u5e93\\u4e2d\\u7684\\u4e8c\\u7ef4\\u8868\\u683c\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u6d41\\u6c34\\u7ebf\\u7528DataFrame\\u6765\\u5b58\\u50a8\\u6e90\\u6570\\u636e\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u8f6c\\u6362\\u5668\\uff08Transformer\\uff09\\u662f\\u4e00\\u79cd\\u53ef\\u4ee5\\u5c06\\u4e00\\u4e2aDataFrame\\u8f6c\\u6362\\u4e3a\\u53e6\\u4e00\\u4e2aDataFrame\\u7684\\u7b97\\u6cd5\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u8bc4\\u4f30\\u5668\\uff08Estimator\\uff09\\u662f\\u4e00\\u79cd\\u53ef\\u4ee5\\u5c06\\u4e00\\u4e2aDataFrame\\u8f6c\\u6362\\u4e3a\\u53e6\\u4e00\\u4e2aDataFrame\\u7684\\u7b97\\u6cd5\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ABC \"}",
+    "key": "965aafd81226ad1041daa552796377e9",
+    "name": "张智强"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u5217\\u5173\\u4e8eScala\\u7684\\u8bf4\\u6cd5\\u6b63\\u786e\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"Scala\\u8fd0\\u884c\\u4e8eJava\\u5e73\\u53f0\\uff0c\\u517c\\u5bb9\\u73b0\\u6709\\u7684Java\\u7a0b\\u5e8f\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"Scala\\u5177\\u5907\\u5f3a\\u5927\\u7684\\u5e76\\u53d1\\u6027\\uff0c\\u652f\\u6301\\u51fd\\u6570\\u5f0f\\u7f16\\u7a0b\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"Scala\\u662f\\u4e00\\u79cd\\u591a\\u8303\\u5f0f\\u7f16\\u7a0b\\u8bed\\u8a00\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"Scala\\u662fSpark\\u7684\\u4e3b\\u8981\\u7f16\\u7a0b\\u8bed\\u8a00\\uff0c\\u4f46Spark\\u8fd8\\u652f\\u6301Java\\u3001Python\\u3001R\\u4f5c\\u4e3a\\u7f16\\u7a0b\\u8bed\\u8a00\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a ABCD \"}",
+    "key": "488123819b1fc478e1383dc58b136286",
+    "name": "张智强"
+  },
+  {
+    "content": "{\"title\": \"\\u8981\\u8bfb\\u53d6people.json\\u6587\\u4ef6\\u751f\\u6210DataFrame\\uff0c\\u53ef\\u4ee5\\u4f7f\\u7528\\u4e0b\\u9762\\u54ea\\u4e9b\\u547d\\u4ee4\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"spark.read.json(\\\"people.json\\\")\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"spark.read.parquet(\\\"people.json\\\")\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"spark.read.format(\\\"json\\\").load(\\\"people.json\\\")\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"spark.read.format(\\\"csv\\\").load(\\\"people.json\\\")\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a AC \"}",
+    "key": "b0a7832e4dd910f818322d2fab22fa4f",
+    "name": "张智强"
+  },
+  {
+    "content": "{\"title\": \"\\u5173\\u4e8eRDD\\u4e4b\\u95f4\\u7684\\u4f9d\\u8d56\\u5206\\u4e3a\\u7a84\\u4f9d\\u8d56\\u548c\\u5bbd\\u4f9d\\u8d56\\uff0c\\u4ee5\\u4e0b\\u8bf4\\u6cd5\\u6b63\\u786e\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u5b58\\u5728\\u4e00\\u4e2a\\u7236RDD\\u7684\\u4e00\\u4e2a\\u5206\\u533a\\u5bf9\\u5e94\\u4e00\\u4e2a\\u5b50RDD\\u7684\\u591a\\u4e2a\\u5206\\u533a\\uff0c\\u5219\\u4e3a\\u5bbd\\u4f9d\\u8d56\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u5b58\\u5728\\u4e00\\u4e2a\\u7236RDD\\u7684\\u591a\\u4e2a\\u5206\\u533a\\u5bf9\\u5e94\\u4e00\\u4e2a\\u5b50RDD\\u7684\\u4e00\\u4e2a\\u5206\\u533a\\uff0c\\u5219\\u4e3a\\u5bbd\\u4f9d\\u8d56\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u5b58\\u5728\\u4e00\\u4e2a\\u7236RDD\\u7684\\u4e00\\u4e2a\\u5206\\u533a\\u53ea\\u88ab\\u4e00\\u4e2a\\u5b50RDD\\u7684\\u4e00\\u4e2a\\u5206\\u533a\\u6240\\u4f7f\\u7528\\uff0c\\u5219\\u4e3a\\u7a84\\u4f9d\\u8d56\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u5b58\\u5728\\u4e00\\u4e2a\\u7236RDD\\u7684\\u4e00\\u4e2a\\u5206\\u533a\\u88ab\\u4e00\\u4e2a\\u5b50RDD\\u7684\\u591a\\u4e2a\\u5206\\u533a\\u6240\\u4f7f\\u7528\\uff0c\\u5219\\u4e3a\\u7a84\\u4f9d\\u8d56\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a AC \"}",
+    "key": "d3b0bf477b92b6fa8ae60200ff50122f",
+    "name": "张智强"
+  },
+  {
+    "content": "{\"title\": \"\\u4ee5\\u4e0b\\u5173\\u4e8e\\u5bbd\\u4f9d\\u8d56\\u548c\\u7a84\\u4f9d\\u8d56\\u7684\\u63cf\\u8ff0\\u6b63\\u786e\\u7684\\u6709\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u5bbd\\u4f9d\\u8d56\\u53ef\\u4ee5\\u5b9e\\u73b0\\u201c\\u6d41\\u6c34\\u5316\\u201d\\u4f18\\u5316\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u7a84\\u4f9d\\u8d56\\u53ef\\u4ee5\\u5b9e\\u73b0\\u201c\\u6d41\\u6c34\\u5316\\u201d\\u4f18\\u5316\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u5c3d\\u91cf\\u5c06\\u7a84\\u4f9d\\u8d56\\u5212\\u5206\\u5230\\u540c\\u4e00\\u4e2astage\\u4e2d\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u5bbd\\u4f9d\\u8d56\\u5bf9\\u4e8e\\u4f5c\\u4e1ajob\\u7684\\u4f18\\u5316\\u66f4\\u6709\\u5229\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a BC \"}",
+    "key": "dd2a61cc7c2a11a4cb33bad81aa928fe",
+    "name": "张智强"
+  },
+  {
+    "content": "{\"title\": \"\\u5728\\u4f7f\\u7528MapReduce\\u7a0b\\u5e8fWordCount\\u8fdb\\u884c\\u8bcd\\u9891\\u7edf\\u8ba1\\u65f6\\uff0c\\u5bf9\\u4e8e\\u6587\\u672c\\u884c\\u201chello hadoop hello world\\u201d\\uff0c\\u7ecf\\u8fc7WordCount\\u7a0b\\u5e8f\\u7684Map\\u51fd\\u6570\\u5904\\u7406\\u540e\\u76f4\\u63a5\\u8f93\\u51fa\\u7684\\u4e2d\\u95f4\\u7ed3\\u679c\\uff0c\\u5e94\\u8be5\\u662f\\u4e0b\\u9762\\u54ea\\u79cd\\u5f62\\u5f0f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"<\\\"hello\\\",1>\\u3001<\\\"hello\\\",1>\\u3001<\\\"hadoop\\\",1>\\u548c<\\\"world\\\",1>\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"<\\\"hello\\\",2>\\u3001<\\\"hadoop\\\",1>\\u548c<\\\"world\\\",1>\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"<\\\"hello\\\",<1,1>>\\u3001<\\\"hadoop\\\",1>\\u548c<\\\"world\\\",1>\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"<\\\"hello\\\",1,1>\\u3001<\\\"hadoop\\\",1>\\u548c<\\\"world\\\",1>\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a C \"}",
+    "key": "2363e04917aae24c6dba50cc0f7f895c",
+    "name": "杨嘉敏"
+  },
+  {
+    "content": "{\"title\": \"\\u91c7\\u7528\\u591a\\u526f\\u672c\\u5197\\u4f59\\u5b58\\u50a8\\u7684\\u4f18\\u52bf\\u4e0d\\u5305\\u542b\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u4fdd\\u8bc1\\u6570\\u636e\\u53ef\\u9760\\u6027\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u8282\\u7ea6\\u5b58\\u50a8\\u7a7a\\u95f4\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u52a0\\u5feb\\u6570\\u636e\\u4f20\\u8f93\\u901f\\u5ea6\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u5bb9\\u6613\\u68c0\\u67e5\\u6570\\u636e\\u9519\\u8bef\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a B \"}",
+    "key": "0337ab9721204e4ebf5a41136903ef2d",
+    "name": "杨嘉敏"
+  },
+  {
+    "content": "{\"title\": \"\\u4f7f\\u7528MapReduce\\u7edf\\u8ba1\\u5b66\\u751f\\u7684\\u5e73\\u5747\\u6210\\u7ee9\\u65f6\\uff0c\\u5982\\u679c\\u8f93\\u51fa\\u7ed3\\u679c\\u7684\\u683c\\u5f0f\\u4e3a\\u201c\\u5b66\\u751f\\u59d3\\u540d\\u5e73\\u5747\\u6210\\u7ee9\\u201d\\uff0c\\u5982\\u201cAlice89.5\\u201d\\uff0c\\u5bf9\\u5e94\\u8f93\\u51fa\\u952e\\u503c\\u5bf9\\u683c\\u5f0f\\u8bbe\\u7f6e\\u7684\\u547d\\u4ee4\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"job.setOutputKeyClass(Text.class); job.setOutputValueClass(Text.class)\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"job.setOutputKeyClass(IntWritable.class); job.setOutputValueClass(Text.class)\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"job.setOutputKeyClass(Text.class); job.setOutputValueClass(LongWritable.class)\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"job.setOutputKeyClass(Text.class); job.setOutputValueClass(DoubleWritable.class)\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a D \"}",
+    "key": "ac3b944f4e0e09703eeb9c2aeda636b7",
+    "name": "杨嘉敏"
+  },
+  {
+    "content": "{\"title\": \"\\u4e0b\\u5217\\u5c5e\\u4e8eHadoop\\u9002\\u7528\\u573a\\u666f\\u7684\\u662f\\uff1a\", \"retMenu\": [{\"xx\": \"A\\u3001\", \"xxContent\": \"\\u67d0\\u4e00\\u7f51\\u7ad9\\u7528\\u6237\\u7684\\u884c\\u4e3a\\u6570\\u636e\"}, {\"xx\": \"B\\u3001\", \"xxContent\": \"\\u7ed3\\u6784\\u5316\\u6570\\u636e\"}, {\"xx\": \"C\\u3001\", \"xxContent\": \"\\u7535\\u5546\\u6570\\u636e\\u5b58\\u50a8\\u3001\\u5904\\u7406\"}, {\"xx\": \"D\\u3001\", \"xxContent\": \"\\u9700\\u8981\\u7ecf\\u5e38\\u4fee\\u6539\\u7684\\u6570\\u636e\"}], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a AC \"}",
+    "key": "bdd3c34fb42404e52fc3c5ce39ecd3f8",
+    "name": "杨嘉敏"
+  },
+  {
+    "content": "{\"title\": \"HDFS\\u53ef\\u4ee5\\u5b58\\u50a8\\u6d77\\u91cf\\u7684\\u6570\\u636e\\uff0c\\u540c\\u65f6\\u4e5f\\u652f\\u6301\\u4f4e\\u5ef6\\u8fdf\\u67e5\\u8be2\\u3002\", \"retMenu\": [], \"ans\": \"\\u6b63\\u786e\\u7b54\\u6848\\uff1a\\u00d7\"}",
+    "key": "31b156639be21ba54c9f0b7ef47575e5",
+    "name": "杨嘉敏"
+  }
+]

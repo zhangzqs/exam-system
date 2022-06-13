@@ -6,10 +6,13 @@ import (
 	"strconv"
 )
 
+type QuestionType interface {
+	SingleQuestion | MultipleQuestion | FillQuestion | JudgeQuestion
+}
 type SingleQuestion struct {
-	Title   string
-	Options []string
-	Answer  int
+	Title   string   `json:"title"`
+	Options []string `json:"options"`
+	Answer  int      `json:"answer"`
 }
 
 func AddSingleQuestion(operatorUid int, question *SingleQuestion) (int, error) {
@@ -29,9 +32,9 @@ func AddSingleQuestion(operatorUid int, question *SingleQuestion) (int, error) {
 }
 
 type MultipleQuestion struct {
-	Title   string
-	Options []string
-	Answer  []int
+	Title   string   `json:"title"`
+	Options []string `json:"options"`
+	Answer  []int    `json:"answer"`
 }
 
 func AddMultipleQuestion(operatorUid int, question *MultipleQuestion) (int, error) {
@@ -51,8 +54,8 @@ func AddMultipleQuestion(operatorUid int, question *MultipleQuestion) (int, erro
 }
 
 type FillQuestion struct {
-	Title  string
-	Answer []string
+	Title  string   `json:"title"`
+	Answer []string `json:"answer"`
 }
 
 func AddFillQuestion(operatorUid int, question *FillQuestion) (int, error) {
@@ -73,8 +76,8 @@ func AddFillQuestion(operatorUid int, question *FillQuestion) (int, error) {
 }
 
 type JudgeQuestion struct {
-	Title  string
-	Answer bool
+	Title  string `json:"title"`
+	Answer bool   `json:"answer"`
 }
 
 func AddJudgeQuestion(operatorUid int, question *JudgeQuestion) (int, error) {
@@ -98,21 +101,24 @@ func DeleteQuestion(operatorUid int, id int) bool {
 	return true
 }
 
-func UpdateSingleQuestion(operatorUid int, id int, title string, options []string, answer int) int {
-	return 0
+func UpdateSingleQuestion(operatorUid int, qid int, question *SingleQuestion) error {
+	return nil
 }
-func UpdateMultipleQuestion(operatorUid int, id int, title string, options []string, answer []int) int {
-	return 0
+func UpdateMultipleQuestion(operatorUid int, qid int, question *MultipleQuestion) error {
+	return nil
+
 }
-func UpdateFillQuestion(operatorUid int, id int, title string, answer []string) int {
-	return 0
+func UpdateFillQuestion(operatorUid int, qid int, question *FillQuestion) error {
+	return nil
+
 }
-func UpdateJudgeQuestion(operatorUid int, id int, title string, answer bool) int {
-	return 0
+func UpdateJudgeQuestion(operatorUid int, qid int, question *JudgeQuestion) error {
+	return nil
+
 }
 
-func GetQuestion(operatorUid int, id int) {
-
+func GetQuestion(operatorUid int, id int) any {
+	return nil
 }
 
 func GetUserQuestions(uid int) {

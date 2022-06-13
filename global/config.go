@@ -39,7 +39,7 @@ var (
 func GetConfig() *Config {
 	configOnce.Do(func() {
 		log.Println("加载配置文件 config.yaml")
-		bs, err := ioutil.ReadFile("config.yaml")
+		bs, err := ioutil.ReadFile("C:\\Users\\zzq\\Desktop\\go-jwt-test\\config.yaml")
 		if err != nil {
 			log.Fatalln(err)
 		}

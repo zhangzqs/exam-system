@@ -2,59 +2,70 @@ package controller
 
 import (
 	"github.com/gin-gonic/gin"
+	"github.com/goinggo/mapstructure"
 	"github.com/zhangzqs/exam-system/service"
 	"strconv"
 )
 
-type addQuestionRequestBody struct {
-	Title   string   `json:"title"`
-	Type    string   `json:"type"`
-	Options []string `json:"options"`
-
-	// int | []int | []string | bool
-	Answer interface{} `json:"answer"`
-}
-type addQuestionResponseBody struct {
-	Id int `json:"id"`
+type Question[T any] struct {
+	Type    string `json:"type"`
+	Content T      `json:"content"`
 }
 
 func AddQuestion(c *gin.Context) {
-	//uid := GetUid(c)
-	var qr addQuestionRequestBody
-	err := c.BindJSON(&qr)
+	uid := GetUid(c)
+	mp := make(map[string]any)
+	err := c.BindJSON(&mp)
 	if err != nil {
 		RequestFormatError(c)
 		return
 	}
 
-	//switch qr.Type {
-	//case "single":
-	//	SuccessfulApiResponse(c, addQuestionResponseBody{
-	//		Id: service.AddSingleQuestion(uid, &service.SingleQuestion{
-	//			Title: qr.Title, Options: qr.Options, Answer: qr.Answer.(int),
-	//		}),
-	//	})
-	//	return
-	//case "multiple":
-	//	SuccessfulApiResponse(c, addQuestionResponseBody{
-	//		Id: service.AddMultipleQuestion(uid, qr.Title, qr.Options, qr.Answer.([]int)),
-	//	})
-	//	return
-	//case "fill":
-	//	SuccessfulApiResponse(c, addQuestionResponseBody{
-	//		Id: service.AddFillQuestion(uid, qr.Title, qr.Answer.([]string)),
-	//	})
-	//	return
-	//case "judge":
-	//	SuccessfulApiResponse(c, addQuestionResponseBody{
-	//		Id: service.AddJudgeQuestion(uid, qr.Title, qr.Answer.(bool)),
-	//	})
-	//	return
-	//
-	//default:
-	//	RequestContentError(c, "题目类型错误："+qr.Type)
-	//}
-	RequestContentError(c, "题目类型错误："+qr.Type)
+	var id int
+	qType := mp["type"]
+	qContent := mp["content"]
+	switch qType {
+	case "single":
+		var q service.SingleQuestion
+		err = mapstructure.Decode(qContent, &q)
+		if err != nil {
+			RequestFormatError(c, "单选题内容解析异常", err)
+		}
+		id, err = service.AddSingleQuestion(uid, &q)
+
+	case "multiple":
+		var q service.MultipleQuestion
+		err = mapstructure.Decode(qContent, &q)
+		if err != nil {
+			RequestFormatError(c, "多选题内容解析异常", err)
+		}
+		id, err = service.AddMultipleQuestion(uid, &q)
+	case "fill":
+		var q service.FillQuestion
+		err = mapstructure.Decode(qContent, &q)
+		if err != nil {
+			RequestFormatError(c, "填空题内容解析异常", err)
+		}
+		id, err = service.AddFillQuestion(uid, &q)
+	case "judge":
+		var q service.JudgeQuestion
+		err = mapstructure.Decode(qContent, &q)
+		if err != nil {
+			RequestFormatError(c, "判断题内容解析异常", err)
+		}
+		id, err = service.AddJudgeQuestion(uid, &q)
+	default:
+		RequestContentError(c, "题目类型错误：", qType)
+		return
+	}
+	if err != nil {
+		DatabaseError(c, "题目存储异常", err)
+		return
+	}
+
+	SuccessfulApiResponse(c, gin.H{
+		"id": id,
+	})
 }
 func DeleteQuestion(c *gin.Context) {
 	idStr, _ := c.Params.Get("id")
@@ -64,50 +75,67 @@ func DeleteQuestion(c *gin.Context) {
 	}
 	uid := GetUid(c)
 	service.DeleteQuestion(uid, id)
-	SuccessfulApiResponse(c, nil)
+	SuccessfulApiResponse(c)
 }
-
-type updateQuestionRequestBody struct {
-	Id      int      `json:"id"`
-	Title   string   `json:"title"`
-	Type    string   `json:"type"`
-	Options []string `json:"options"`
-
-	// int | []int | []string | bool
-	Answer interface{} `json:"answer"`
-}
-
 func UpdateQuestion(c *gin.Context) {
 	uid := GetUid(c)
 
-	var qr updateQuestionRequestBody
-	err := c.BindJSON(&qr)
+	idStr, _ := c.Params.Get("id")
+	id, err := strconv.Atoi(idStr)
+	if err != nil {
+		RequestFormatError(c)
+		return
+	}
+	mp := make(map[string]any)
+	err = c.BindJSON(&mp)
 	if err != nil {
 		RequestFormatError(c)
 		return
 	}
 
-	switch qr.Type {
-	case "single":
-		service.UpdateSingleQuestion(uid, qr.Id, qr.Title, qr.Options, qr.Answer.(int))
-		SuccessfulApiResponse(c, nil)
-		return
-	case "multiple":
-		service.UpdateMultipleQuestion(uid, qr.Id, qr.Title, qr.Options, qr.Answer.([]int))
-		SuccessfulApiResponse(c, nil)
-		return
-	case "fill":
-		service.UpdateFillQuestion(uid, qr.Id, qr.Title, qr.Answer.([]string))
-		SuccessfulApiResponse(c, nil)
-		return
-	case "judge":
-		service.UpdateJudgeQuestion(uid, qr.Id, qr.Title, qr.Answer.(bool))
-		SuccessfulApiResponse(c, nil)
-		return
+	qType := mp["type"]
+	qContent := mp["content"]
 
+	switch qType {
+	case "single":
+		var q service.SingleQuestion
+		err = mapstructure.Decode(qContent, &q)
+		if err != nil {
+			RequestFormatError(c, "单选题内容解析异常", err)
+		}
+		err = service.UpdateSingleQuestion(uid, id, &q)
+
+	case "multiple":
+		var q service.MultipleQuestion
+		err = mapstructure.Decode(qContent, &q)
+		if err != nil {
+			RequestFormatError(c, "多选题内容解析异常", err)
+		}
+		err = service.UpdateMultipleQuestion(uid, id, &q)
+	case "fill":
+		var q service.FillQuestion
+		err = mapstructure.Decode(qContent, &q)
+		if err != nil {
+			RequestFormatError(c, "填空题内容解析异常", err)
+		}
+		err = service.UpdateFillQuestion(uid, id, &q)
+	case "judge":
+		var q service.JudgeQuestion
+		err = mapstructure.Decode(qContent, &q)
+		if err != nil {
+			RequestFormatError(c, "判断题内容解析异常", err)
+		}
+		err = service.UpdateJudgeQuestion(uid, id, &q)
 	default:
-		RequestContentError(c, "题目类型错误："+qr.Type)
+		RequestContentError(c, "题目类型错误：", qType)
+		return
 	}
+	if err != nil {
+		DatabaseError(c, "题目存储异常", err)
+		return
+	}
+
+	SuccessfulApiResponse(c)
 }
 
 func GetQuestion(c *gin.Context) {
@@ -119,12 +147,12 @@ func GetQuestion(c *gin.Context) {
 	uid := GetUid(c)
 
 	service.GetQuestion(uid, id)
-	SuccessfulApiResponse(c, nil)
+	SuccessfulApiResponse(c)
 }
 
 func GetUserQuestions(c *gin.Context) {
 	uid := GetUid(c)
 
 	service.GetUserQuestions(uid)
-	SuccessfulApiResponse(c, nil)
+	SuccessfulApiResponse(c)
 }

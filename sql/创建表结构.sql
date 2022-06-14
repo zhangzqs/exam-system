@@ -34,9 +34,9 @@ CREATE TABLE paper_question
     qid   int REFERENCES questions (qid),
     pid   int REFERENCES papers (pid),
     score int,
-    CONSTRAINT paper_question_pk PRIMARY KEY (qid,pid)
+    CONSTRAINT paper_question_pk PRIMARY KEY (qid, pid)
 );
-CREATE TABLE room
+CREATE TABLE rooms
 (
     -- 一次测验
     rid        SERIAL PRIMARY KEY,
@@ -49,7 +49,7 @@ CREATE TABLE room
 CREATE TABLE user_room
 (
     uid       INT REFERENCES users (uid) NOT NULL,
-    rid       INT REFERENCES room (rid)  NOT NULL,
+    rid       INT REFERENCES rooms (rid)  NOT NULL,
 
     -- 进入和提交的时间，可空
     enter_at  TIMESTAMP WITH TIME ZONE,
@@ -57,16 +57,20 @@ CREATE TABLE user_room
 
     -- 教师评语及分数，可空
     comment   TEXT,
-    score     REAL
+    score     REAL,
+
+    CONSTRAINT user_room_pk PRIMARY KEY (uid, rid)
 );
 CREATE TABLE user_answer
 (
     uid         INT REFERENCES users (uid)     NOT NULL,
     -- 测验号
-    rid         INT REFERENCES room (rid)      NOT NULL,
+    rid         INT REFERENCES rooms (rid)      NOT NULL,
     -- 问题编号
     qid         INT REFERENCES questions (qid) NOT NULL,
     -- 用户的答案
     -- 若为NULL则表示没写
-    user_answer TEXT
+    user_answer TEXT,
+
+    CONSTRAINT user_answer_pk PRIMARY KEY (uid, rid, qid)
 );

@@ -29,11 +29,11 @@ func InitRouter(r *gin.Engine) {
 	}
 	roomsGroup := r.Group("/rooms", JwtAuthMiddleware)
 	{
-		roomsGroup.POST("/")       // 创建考场
-		roomsGroup.GET("/")        // 获取创建的所有考场列表
-		roomsGroup.DELETE("/:rid") // 删除考场信息
-		roomsGroup.PUT("/:rid")    // 修改考场信息
-		roomsGroup.GET("/:rid")    // 获取考场信息
+		roomsGroup.POST("/", CreateRoom) // 创建考场
+		roomsGroup.GET("/")              // 获取创建的所有考场列表
+		roomsGroup.DELETE("/:rid")       // 删除考场信息
+		roomsGroup.PUT("/:rid")          // 修改考场信息
+		roomsGroup.GET("/:rid")          // 获取考场信息
 
 		studentGroup := roomsGroup.Group("/:rid/users/:uid") // 考场中的考生
 		{

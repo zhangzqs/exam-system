@@ -29,19 +29,23 @@ func InitRouter(r *gin.Engine) {
 	}
 	roomsGroup := r.Group("/rooms", JwtAuthMiddleware)
 	{
-		roomsGroup.POST("/", CreateRoom) // 创建考场
-		roomsGroup.GET("/")              // 获取创建的所有考场列表
-		roomsGroup.DELETE("/:rid")       // 删除考场信息
-		roomsGroup.PUT("/:rid")          // 修改考场信息
-		roomsGroup.GET("/:rid")          // 获取考场信息
+		roomsGroup.POST("/", CreateRoom)  // 创建考场
+		roomsGroup.GET("/", GetUserRooms) // 获取创建的所有考场列表
+		roomsGroup.DELETE("/:rid")        // 删除考场信息
+		roomsGroup.PUT("/:rid")           // 修改考场信息
+		roomsGroup.GET("/:rid")           // 获取考场信息
 
-		studentGroup := roomsGroup.Group("/:rid/users/:uid") // 考场中的考生
+		studentsGroup := roomsGroup.Group("/:rid/users")
 		{
-			studentGroup.GET("/")        // 获取考生成绩与评语信息
-			studentGroup.PUT("/")        // 评语修改及是否选择发放成绩信息
-			studentGroup.GET("/enter")   //进入考场获得试卷开始考试
-			studentGroup.POST("/submit") // 提交试卷
-			studentGroup.GET("/detail")  // 获取考生答卷详情
+			studentsGroup.POST("/", AddStudent)
+			studentGroup := studentsGroup.Group("/:uid") // 考场中的考生
+			{
+				studentGroup.GET("/")        // 获取考生成绩与评语信息
+				studentGroup.PUT("/")        // 评语修改及是否选择发放成绩信息
+				studentGroup.GET("/enter")   //进入考场获得试卷开始考试
+				studentGroup.POST("/submit") // 提交试卷
+				studentGroup.GET("/detail")  // 获取考生答卷详情
+			}
 		}
 	}
 }

@@ -12,5 +12,7 @@ func CreateRoom(r *entity.RoomEntity) (rid int, err error) {
 		return 0, err
 	}
 	r.RoomId = rid
+	r.StudentList = []entity.Student{}
+
 	return
 }

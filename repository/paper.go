@@ -43,10 +43,34 @@ func GetPaperInfo(pid int) (*PaperInfo, error) {
 		"SELECT pid,created_by,title "+
 			"FROM papers "+
 			"WHERE pid=$1",
-		pid).Scan(&pi.Pid, &pi.CreatedBy, &pi.Title); err != nil {
+		pid,
+	).Scan(&pi.Pid, &pi.CreatedBy, &pi.Title); err != nil {
 		return nil, err
 	}
 	return &pi, nil
+}
+
+func GetPaperInfosByUid(uid int) ([]PaperInfo, error) {
+	db := global.GetDatabase()
+	cur, err := db.Query(
+		"SELECT pid,created_by,title "+
+			"FROM papers "+
+			"WHERE created_by=$1",
+		uid,
+	)
+	if err != nil {
+		return nil, err
+	}
+	var pis []PaperInfo
+	for cur.Next() {
+		var pi PaperInfo
+		err := cur.Scan(&pi.Pid, &pi.CreatedBy, &pi.Title)
+		if err != nil {
+			return nil, err
+		}
+		pis = append(pis, pi)
+	}
+	return pis, nil
 }
 
 type PaperQuestion struct {

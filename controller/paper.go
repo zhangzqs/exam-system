@@ -38,3 +38,13 @@ func GetPaper(c *gin.Context) {
 	}
 	SuccessfulApiResponse(c, paper)
 }
+
+func GetUserPapers(c *gin.Context) {
+	ps, err := service.GetUserPapers(GetUid(c))
+	if err != nil {
+		DatabaseError(c, err)
+	}
+	SuccessfulApiResponse(c, gin.H{
+		"papers": ps,
+	})
+}

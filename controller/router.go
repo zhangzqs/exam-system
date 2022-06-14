@@ -22,7 +22,7 @@ func InitRouter(r *gin.Engine) {
 	papersGroup := r.Group("/papers", JwtAuthMiddleware)
 	{
 		papersGroup.POST("/", GeneratePaper)
-		papersGroup.GET("/")
+		papersGroup.GET("/", GetUserPapers)
 		papersGroup.DELETE("/:pid")
 		papersGroup.PUT("/:pid")
 		papersGroup.GET("/:pid", GetPaper)

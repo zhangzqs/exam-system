@@ -67,3 +67,20 @@ func GetPaper(uid int, pid int) (*PaperContent, error) {
 		Questions: qs,
 	}, nil
 }
+
+func GetUserPapers(uid int) ([]PaperContent, error) {
+	pis, err := repository.GetPaperInfosByUid(uid)
+	if err != nil {
+		return nil, err
+	}
+	var pcs []PaperContent
+	for _, pi := range pis {
+		pcs = append(pcs, PaperContent{
+			Pid:       pi.Pid,
+			Title:     pi.Title,
+			CreatedBy: pi.CreatedBy,
+			Questions: nil,
+		})
+	}
+	return pcs, nil
+}

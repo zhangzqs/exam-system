@@ -15,16 +15,16 @@ func InitRouter(r *gin.Engine) {
 	{
 		questionsGroup.POST("/", AddQuestion)
 		questionsGroup.GET("/", GetUserQuestions)
-		questionsGroup.DELETE("/:id", DeleteQuestion)
-		questionsGroup.PUT("/:id", UpdateQuestion)
-		questionsGroup.GET("/:id", GetQuestion)
+		questionsGroup.DELETE("/:qid", DeleteQuestion)
+		questionsGroup.PUT("/:qid", UpdateQuestion)
+		questionsGroup.GET("/:qid", GetQuestion)
 	}
 	papersGroup := r.Group("/papers", JwtAuthMiddleware)
 	{
-		papersGroup.POST("/")
+		papersGroup.POST("/", GeneratePaper)
 		papersGroup.GET("/")
-		papersGroup.DELETE("/:id")
-		papersGroup.PUT("/:id")
-		papersGroup.GET("/:id")
+		papersGroup.DELETE("/:pid")
+		papersGroup.PUT("/:pid")
+		papersGroup.GET("/:pid", GetPaper)
 	}
 }

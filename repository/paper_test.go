@@ -29,9 +29,9 @@ func TestPutPaperQuestion(t *testing.T) {
 }
 
 func TestGetPaperQuestionScore(t *testing.T) {
-	score, err := GetPaperQuestion(3, 2)
-	if err != nil {
-		log.Fatalln(err)
-	}
-	log.Println(score)
+	//score, err := GetPaperQuestion(3, 2)
+	//if err != nil {
+	//	log.Fatalln(err)
+	//}
+	//log.Println(score)
 }

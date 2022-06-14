@@ -33,7 +33,8 @@ CREATE TABLE paper_question
 (
     qid   int REFERENCES questions (qid),
     pid   int REFERENCES papers (pid),
-    score int
+    score int,
+    CONSTRAINT paper_question_pk PRIMARY KEY (qid,pid)
 );
 CREATE TABLE room
 (

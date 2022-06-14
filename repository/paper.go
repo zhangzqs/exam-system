@@ -30,14 +30,44 @@ func PutPaperQuestion(qid int, pid int, score float64) error {
 	return nil
 }
 
-func GetPaperQuestion(qid int, pid int) (score float64, err error) {
+type PaperInfo struct {
+	Pid       int
+	CreatedBy int
+	Title     string
+}
+
+func GetPaperInfo(pid int) (*PaperInfo, error) {
 	db := global.GetDatabase()
-	if err = db.QueryRow(
-		"SELECT score FROM paper_question WHERE qid=$1 AND pid=$2",
-		qid,
-		pid,
-	).Scan(&score); err != nil {
-		return
+	var pi PaperInfo
+	if err := db.QueryRow(
+		"SELECT pid,created_by,title "+
+			"FROM papers "+
+			"WHERE pid=$1",
+		pid).Scan(&pi.Pid, &pi.CreatedBy, &pi.Title); err != nil {
+		return nil, err
 	}
-	return
+	return &pi, nil
+}
+
+type PaperQuestion struct {
+	Score float64
+	Qid   int
+}
+
+func GetPaperQuestions(pid int) ([]PaperQuestion, error) {
+	db := global.GetDatabase()
+	cur, err := db.Query("SELECT qid,score FROM paper_question WHERE pid=$1", pid)
+	if err != nil {
+		return nil, err
+	}
+	var pqs []PaperQuestion
+	for cur.Next() {
+		var pq PaperQuestion
+		err := cur.Scan(&pq.Qid, &pq.Score)
+		if err != nil {
+			return nil, err
+		}
+		pqs = append(pqs, pq)
+	}
+	return pqs, nil
 }

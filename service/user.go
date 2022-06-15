@@ -2,26 +2,24 @@ package service
 
 import (
 	"errors"
-	"github.com/zhangzqs/exam-system/global"
 	"github.com/zhangzqs/exam-system/repository"
 )
 
-func Login(username string, password string) (string, error) {
+func Login(username string, password string) (int, error) {
 	uid, err := repository.UserValid(username, password)
 	if err != nil {
-		return "", err
+		return -1, err
 	}
-	jwt := global.GetJwt()
-	return jwt.GenerateToken(uid), nil
+	return uid, nil
 }
 
-func Register(username string, password string) (string, error) {
+func Register(username string, password string) (int, error) {
 	err := repository.UserInsert(username, password)
 	if err != nil {
 		if repository.UserExists(username) {
-			return "", errors.New("用户已存在")
+			return -1, errors.New("用户已存在")
 		}
-		return "", err
+		return -1, err
 	}
 	return Login(username, password)
 }

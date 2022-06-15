@@ -2,6 +2,7 @@ package controller
 
 import (
 	"github.com/gin-gonic/gin"
+	"github.com/zhangzqs/exam-system/global"
 	"github.com/zhangzqs/exam-system/service"
 )
 
@@ -11,6 +12,7 @@ type loginRequestBody struct {
 }
 
 type loginResponseBody struct {
+	Uid      int    `json:"uid"`
 	JwtToken string `json:"jwtToken"`
 }
 
@@ -21,12 +23,16 @@ func Login(c *gin.Context) {
 		RequestFormatError(c)
 		return
 	}
-	token, err := service.Login(rb.Username, rb.Password)
+	uid, err := service.Login(rb.Username, rb.Password)
 	if err != nil {
 		LoginError(c)
 		return
 	}
-	SuccessfulApiResponse(c, loginResponseBody{token})
+
+	SuccessfulApiResponse(c, loginResponseBody{
+		Uid:      uid,
+		JwtToken: global.GetJwt().GenerateToken(uid),
+	})
 }
 
 func Register(c *gin.Context) {
@@ -36,10 +42,13 @@ func Register(c *gin.Context) {
 		RequestFormatError(c)
 		return
 	}
-	token, err := service.Register(rb.Username, rb.Password)
+	uid, err := service.Register(rb.Username, rb.Password)
 	if err != nil {
 		RegisterUserExistsError(c)
 		return
 	}
-	SuccessfulApiResponse(c, loginResponseBody{token})
+	SuccessfulApiResponse(c, loginResponseBody{
+		Uid:      uid,
+		JwtToken: global.GetJwt().GenerateToken(uid),
+	})
 }

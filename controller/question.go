@@ -134,7 +134,7 @@ func UpdateQuestion(c *gin.Context) {
 }
 
 func GetQuestion(c *gin.Context) {
-	idStr, _ := c.Params.Get("id")
+	idStr, _ := c.Params.Get("qid")
 	id, err := strconv.Atoi(idStr)
 	if err != nil {
 		RequestContentError(c, err.Error())

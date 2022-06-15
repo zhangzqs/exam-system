@@ -15,23 +15,3 @@ func CreateRoom(r *repository.RoomEntity) (rid int, err error) {
 
 	return
 }
-
-// EnterRoom 进入考场
-func EnterRoom(roomId int, uid int) (room *repository.RoomEntity, paper *PaperContent, err error) {
-
-	room, err = repository.GetRoom(roomId)
-	if err != nil {
-		return
-	}
-	paper, err = GetPaper(uid, room.PaperId, false)
-	if err != nil {
-		return
-	}
-
-	err = repository.UpdateEnterRoomTime(roomId, uid)
-	if err != nil {
-		return
-	}
-
-	return
-}

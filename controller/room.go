@@ -100,7 +100,32 @@ func EnterRoom(c *gin.Context) {
 }
 
 func SubmitPaper(c *gin.Context) {
-
+	roomId, err := strconv.Atoi(c.Param("rid"))
+	if err != nil {
+		RequestFormatError(c, err)
+		return
+	}
+	var request struct {
+		UserAnswers map[string]any `json:"userAnswers"`
+	}
+	err = c.BindJSON(&request)
+	if err != nil {
+		RequestFormatError(c, err)
+		return
+	}
+	for k, v := range request.UserAnswers {
+		qid, err := strconv.Atoi(k)
+		if err != nil {
+			RequestFormatError(c, err)
+			return
+		}
+		err = service.SubmitAnswer(GetUid(c), roomId, qid, v)
+		if err != nil {
+			DatabaseError(c, err)
+			return
+		}
+	}
+	SuccessfulApiResponse(c)
 }
 
 func GetTestResult(c *gin.Context) {

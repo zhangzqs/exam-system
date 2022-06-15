@@ -15,7 +15,10 @@ type Question struct {
 
 func AddQuestion(question *Question) (id int, err error) {
 	db := global.GetDatabase()
-	if err = db.QueryRow("INSERT INTO questions (created_by, title, type, option, answer) VALUES ($1, $2, $3, $4, $5) RETURNING qid",
+	if err = db.QueryRow("INSERT INTO questions "+
+		"(created_by, title, type, option, answer) "+
+		"VALUES ($1, $2, $3, $4, $5) "+
+		"RETURNING qid",
 		question.CreatedBy,
 		question.Title,
 		question.Type,
@@ -45,7 +48,12 @@ func GetQuestion(id int) (*Question, error) {
 // GetUserQuestions 获取用户的所有题目
 func GetUserQuestions(uid int, pageId int, limit int) ([]Question, error) {
 	db := global.GetDatabase()
-	cur, err := db.Query("SELECT * FROM questions WHERE created_by=$1 LIMIT $2 OFFSET $3", uid, limit, pageId*limit)
+	cur, err := db.Query(""+
+		"SELECT * "+
+		"FROM questions "+
+		"WHERE created_by=$1 "+
+		"LIMIT $2 "+
+		"OFFSET $3", uid, limit, pageId*limit)
 	if err != nil {
 		return nil, err
 	}

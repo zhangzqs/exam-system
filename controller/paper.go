@@ -32,7 +32,7 @@ func GetPaper(c *gin.Context) {
 	if err != nil {
 		RequestFormatError(c, err)
 	}
-	paper, err := service.GetPaper(GetUid(c), pid)
+	paper, err := service.GetPaper(GetUid(c), pid, true)
 	if err != nil {
 		DatabaseError(c, err)
 	}

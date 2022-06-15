@@ -23,6 +23,7 @@ const (
 	OperationNeedLoginErrorCode = 5
 	TokenInvalidErrorCode       = 6
 	DatabaseErrorCode           = 7
+	PermissionErrorCode         = 8
 )
 
 type ApiResponse struct {
@@ -82,4 +83,8 @@ func TokenInvalidError(c *gin.Context, errorMsg ...any) {
 
 func DatabaseError(c *gin.Context, errorMsg ...any) {
 	errorApiResponse(c, DatabaseErrorCode, "数据库异常", errorMsg)
+}
+
+func PermissionError(c *gin.Context, errorMsg ...any) {
+	errorApiResponse(c, DatabaseErrorCode, "权限异常", errorMsg)
 }

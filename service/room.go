@@ -23,7 +23,7 @@ func EnterRoom(roomId int, uid int) (room *repository.RoomEntity, paper *PaperCo
 	if err != nil {
 		return
 	}
-	paper, err = GetPaper(uid, room.PaperId)
+	paper, err = GetPaper(uid, room.PaperId, false)
 	if err != nil {
 		return
 	}

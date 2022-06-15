@@ -13,18 +13,18 @@ type QuestionType interface {
 type SingleQuestion struct {
 	Title   string   `json:"title"`
 	Options []string `json:"options"`
-	Answer  int      `json:"answer"`
+	Answer  *int     `json:"answer"`
 }
 
 func AddSingleQuestion(operatorUid int, question *SingleQuestion) (int, error) {
 	jsonStr, _ := json.Marshal(question.Options)
-	answerIdStr := strconv.Itoa(question.Answer)
+	answerIdStr, _ := json.Marshal(*question.Answer)
 	qid, err := repository.AddQuestion(&repository.Question{
 		CreatedBy: operatorUid,
 		Title:     question.Title,
 		Type:      "single",
 		Options:   string(jsonStr),
-		Answer:    answerIdStr,
+		Answer:    string(answerIdStr),
 	})
 	if err != nil {
 		return 0, err
@@ -78,7 +78,7 @@ func AddFillQuestion(operatorUid int, question *FillQuestion) (int, error) {
 
 type JudgeQuestion struct {
 	Title  string `json:"title"`
-	Answer bool   `json:"answer"`
+	Answer *bool  `json:"answer"`
 }
 
 func AddJudgeQuestion(operatorUid int, question *JudgeQuestion) (int, error) {
@@ -124,23 +124,30 @@ func UpdateJudgeQuestion(operatorUid int, qid int, question *JudgeQuestion) erro
 }
 
 // 题目表的实体类转换为单选题实体
-func qTabEntity2Single(question *repository.Question) *SingleQuestion {
+func qTabEntity2Single(question *repository.Question, containsAnswer bool) *SingleQuestion {
 	var options []string
 	_ = json.Unmarshal([]byte(question.Options), &options)
 	ans, _ := strconv.Atoi(question.Answer)
+	pans := &ans
+	if !containsAnswer {
+		pans = nil
+	}
 	return &SingleQuestion{
 		Title:   question.Title,
 		Options: options,
-		Answer:  ans,
+		Answer:  pans,
 	}
 }
 
 // 题目表的实体类转换为多选题实体
-func qTabEntity2Multiple(question *repository.Question) *MultipleQuestion {
+func qTabEntity2Multiple(question *repository.Question, containsAnswer bool) *MultipleQuestion {
 	var options []string
 	var answer []int
 	_ = json.Unmarshal([]byte(question.Options), &options)
 	_ = json.Unmarshal([]byte(question.Answer), &answer)
+	if !containsAnswer {
+		answer = nil
+	}
 	return &MultipleQuestion{
 		Title:   question.Title,
 		Options: options,
@@ -149,9 +156,12 @@ func qTabEntity2Multiple(question *repository.Question) *MultipleQuestion {
 }
 
 // 题目表实体类转换为填空题实体
-func qTabEntity2Fill(question *repository.Question) *FillQuestion {
+func qTabEntity2Fill(question *repository.Question, containsAnswer bool) *FillQuestion {
 	var answer []string
 	_ = json.Unmarshal([]byte(question.Answer), &answer)
+	if !containsAnswer {
+		answer = nil
+	}
 	return &FillQuestion{
 		Title:  question.Title,
 		Answer: answer,
@@ -159,11 +169,15 @@ func qTabEntity2Fill(question *repository.Question) *FillQuestion {
 }
 
 // 题目表实体类转换为判断题实体
-func qTabEntity2Judge(question *repository.Question) *JudgeQuestion {
+func qTabEntity2Judge(question *repository.Question, containsAnswer bool) *JudgeQuestion {
 	answer, _ := strconv.ParseBool(question.Answer)
+	pans := &answer
+	if !containsAnswer {
+		pans = nil
+	}
 	return &JudgeQuestion{
 		Title:  question.Title,
-		Answer: answer,
+		Answer: pans,
 	}
 }
 
@@ -173,17 +187,17 @@ type Question struct {
 	Content any    `json:"content" binding:"required"`
 }
 
-func qTabEntity2Question(q *repository.Question) *Question {
+func qTabEntity2Question(q *repository.Question, containsAnswer bool) *Question {
 	var question any
 	switch q.Type {
 	case "single":
-		question = qTabEntity2Single(q)
+		question = qTabEntity2Single(q, containsAnswer)
 	case "multiple":
-		question = qTabEntity2Multiple(q)
+		question = qTabEntity2Multiple(q, containsAnswer)
 	case "fill":
-		question = qTabEntity2Fill(q)
+		question = qTabEntity2Fill(q, containsAnswer)
 	case "judge":
-		question = qTabEntity2Judge(q)
+		question = qTabEntity2Judge(q, containsAnswer)
 	default:
 		panic("数据库包含异常类型：" + q.Type)
 	}
@@ -193,12 +207,12 @@ func qTabEntity2Question(q *repository.Question) *Question {
 		Content: question,
 	}
 }
-func GetQuestion(operatorUid int, id int) (*Question, error) {
+func GetQuestion(operatorUid int, id int, containsAnswer bool) (*Question, error) {
 	q, err := repository.GetQuestion(id)
 	if err != nil {
 		return nil, err
 	}
-	return qTabEntity2Question(q), nil
+	return qTabEntity2Question(q, containsAnswer), nil
 }
 
 func GetUserQuestions(uid int, pageId int, limit int) ([]Question, error) {
@@ -208,7 +222,7 @@ func GetUserQuestions(uid int, pageId int, limit int) ([]Question, error) {
 	}
 	var qs []Question
 	for _, rq := range rqs {
-		qs = append(qs, *qTabEntity2Question(&rq))
+		qs = append(qs, *qTabEntity2Question(&rq, true))
 	}
 	return qs, nil
 }

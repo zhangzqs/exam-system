@@ -14,6 +14,15 @@ func CreateRoom(c *gin.Context) {
 		RequestFormatError(c, err)
 		return
 	}
+	paperInfo, err := repository.GetPaperInfo(room.PaperId)
+	if err != nil {
+		DatabaseError(c, err)
+		return
+	}
+	if paperInfo.CreatedBy != GetUid(c) {
+		PermissionError(c, "您无权限使用试卷：", paperInfo.Pid)
+		return
+	}
 	rid, err := service.CreateRoom(&room)
 	if err != nil {
 		DatabaseError(c, err)
@@ -80,6 +89,7 @@ func EnterRoom(c *gin.Context) {
 	if err != nil {
 		return
 	}
+
 	SuccessfulApiResponse(c, gin.H{
 		"room": gin.H{
 			"startTime": room.StartTime,

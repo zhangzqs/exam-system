@@ -38,7 +38,7 @@ type PaperContent struct {
 	Questions []PaperQuestion `json:"questions"`
 }
 
-func GetPaper(uid int, pid int) (*PaperContent, error) {
+func GetPaper(uid int, pid int, containsAnswer bool) (*PaperContent, error) {
 	pi, err := repository.GetPaperInfo(pid)
 	if err != nil {
 		return nil, err
@@ -52,7 +52,7 @@ func GetPaper(uid int, pid int) (*PaperContent, error) {
 	for _, pq := range pqs {
 		var spq PaperQuestion
 		spq.Score = pq.Score
-		q, err := GetQuestion(uid, pq.Qid)
+		q, err := GetQuestion(uid, pq.Qid, containsAnswer)
 		if err != nil {
 			return nil, err
 		}

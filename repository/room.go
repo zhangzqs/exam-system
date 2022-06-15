@@ -73,3 +73,14 @@ func GetRoom(roomId int) (*entity.RoomEntity, error) {
 	}
 	return &r, nil
 }
+
+func AddStudent(roomId int, studentId int) error {
+	db := global.GetDatabase()
+	if _, err := db.Exec(
+		"INSERT INTO user_room(uid,rid) VALUES ($1,$2)",
+		studentId, roomId,
+	); err != nil {
+		return err
+	}
+	return nil
+}

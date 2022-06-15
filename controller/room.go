@@ -5,6 +5,7 @@ import (
 	"github.com/zhangzqs/exam-system/entity"
 	"github.com/zhangzqs/exam-system/repository"
 	"github.com/zhangzqs/exam-system/service"
+	"strconv"
 )
 
 func CreateRoom(c *gin.Context) {
@@ -34,6 +35,38 @@ func GetUserRooms(c *gin.Context) {
 	})
 }
 
-func AddStudent(c *gin.Context) {
+func AddStudents(c *gin.Context) {
+	var uids []int
+	err := c.BindJSON(&uids)
+	if err != nil {
+		RequestFormatError(c, err)
+		return
+	}
+	roomId, err := strconv.Atoi(c.Param("rid"))
+	if err != nil {
+		RequestFormatError(c, err)
+		return
+	}
+	for _, uid := range uids {
+		err := repository.AddStudent(roomId, uid)
+		if err != nil {
+			DatabaseError(c, err)
+			return
+		}
+	}
+	SuccessfulApiResponse(c)
+}
 
+func GetRoom(c *gin.Context) {
+	roomId, err := strconv.Atoi(c.Param("rid"))
+	if err != nil {
+		RequestFormatError(c, err)
+		return
+	}
+	room, err := repository.GetRoom(roomId)
+	if err != nil {
+		DatabaseError(c, err)
+		return
+	}
+	SuccessfulApiResponse(c, room)
 }

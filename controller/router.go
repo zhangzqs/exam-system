@@ -33,11 +33,11 @@ func InitRouter(r *gin.Engine) {
 		roomsGroup.GET("/", GetUserRooms) // 获取创建的所有考场列表
 		roomsGroup.DELETE("/:rid")        // 删除考场信息
 		roomsGroup.PUT("/:rid")           // 修改考场信息
-		roomsGroup.GET("/:rid")           // 获取考场信息
+		roomsGroup.GET("/:rid", GetRoom)  // 获取考场信息
 
 		studentsGroup := roomsGroup.Group("/:rid/users")
 		{
-			studentsGroup.POST("/", AddStudent)
+			studentsGroup.POST("/", AddStudents)
 			studentGroup := studentsGroup.Group("/:uid") // 考场中的考生
 			{
 				studentGroup.GET("/")        // 获取考生成绩与评语信息

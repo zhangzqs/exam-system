@@ -2,14 +2,13 @@ package controller
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/zhangzqs/exam-system/entity"
 	"github.com/zhangzqs/exam-system/repository"
 	"github.com/zhangzqs/exam-system/service"
 	"strconv"
 )
 
 func CreateRoom(c *gin.Context) {
-	var room entity.RoomEntity
+	var room repository.RoomEntity
 	err := c.BindJSON(&room)
 	if err != nil {
 		RequestFormatError(c, err)
@@ -69,4 +68,31 @@ func GetRoom(c *gin.Context) {
 		return
 	}
 	SuccessfulApiResponse(c, room)
+}
+
+func EnterRoom(c *gin.Context) {
+	roomId, err := strconv.Atoi(c.Param("rid"))
+	if err != nil {
+		RequestFormatError(c, err)
+		return
+	}
+	room, paper, err := service.EnterRoom(roomId, GetUid(c))
+	if err != nil {
+		return
+	}
+	SuccessfulApiResponse(c, gin.H{
+		"room": gin.H{
+			"startTime": room.StartTime,
+			"endTime":   room.EndTime,
+		},
+		"paper": paper,
+	})
+}
+
+func SubmitPaper(c *gin.Context) {
+
+}
+
+func GetTestResult(c *gin.Context) {
+
 }

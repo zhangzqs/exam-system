@@ -35,17 +35,25 @@ func InitRouter(r *gin.Engine) {
 		roomsGroup.PUT("/:rid")           // 修改考场信息
 		roomsGroup.GET("/:rid", GetRoom)  // 获取考场信息
 
-		studentsGroup := roomsGroup.Group("/:rid/users")
+		roomGroup := roomsGroup.Group("/:rid")
 		{
-			studentsGroup.POST("/", AddStudents)
-			studentGroup := studentsGroup.Group("/:uid") // 考场中的考生
+			studentsGroup := roomGroup.Group("/users")
 			{
-				studentGroup.GET("/")        // 获取考生成绩与评语信息
-				studentGroup.PUT("/")        // 评语修改及是否选择发放成绩信息
-				studentGroup.GET("/enter")   //进入考场获得试卷开始考试
-				studentGroup.POST("/submit") // 提交试卷
-				studentGroup.GET("/detail")  // 获取考生答卷详情
+				studentsGroup.POST("/", AddStudents)
+				studentGroup := studentsGroup.Group("/:uid") // 考场中的考生
+				{
+					studentGroup.GET("/") // 获取考生成绩与评语信息
+					studentGroup.PUT("/") // 评语修改及是否选择发放成绩信息
+				}
 			}
+		}
+
+		testGroup := roomGroup.Group("/test")
+		{
+			// 考生调用
+			testGroup.GET("/enter", EnterRoom)      //进入考场获得试卷开始考试
+			testGroup.POST("/submit", SubmitPaper)  // 提交试卷
+			testGroup.GET("/detail", GetTestResult) // 获取考生答卷详情
 		}
 	}
 }

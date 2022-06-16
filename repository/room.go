@@ -98,20 +98,3 @@ func AddStudent(roomId int, studentId int) error {
 	}
 	return nil
 }
-
-func UpdateEnterRoomTime(roomId int, studentId int) error {
-	db := global.GetDatabase()
-	if _, err := db.Exec(
-		"UPDATE user_room "+
-			"SET enter_at = CASE "+
-			"    WHEN enter_at IS NULL THEN now() "+
-			"    ELSE enter_at "+
-			"END "+
-			"WHERE rid = $1 "+
-			"  AND uid = $2",
-		roomId, studentId,
-	); err != nil {
-		return err
-	}
-	return nil
-}

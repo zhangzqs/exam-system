@@ -51,9 +51,10 @@ func InitRouter(r *gin.Engine) {
 		testGroup := roomGroup.Group("/test")
 		{
 			// 考生调用
-			testGroup.GET("/enter", EnterRoom)      //进入考场获得试卷开始考试
-			testGroup.POST("/submit", SubmitPaper)  // 提交试卷
-			testGroup.GET("/detail", GetTestResult) // 获取考生答卷详情
+			testGroup.GET("/enter", EnterRoom)            //进入考场获得试卷开始考试
+			testGroup.POST("/submitAnswer", SubmitAnswer) // 提交答案
+			testGroup.POST("/submitPaper", SubmitPaper)   // 提交答案
+			testGroup.GET("/detail", GetTestResult)       // 获取考生答卷详情
 		}
 	}
 }

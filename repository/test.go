@@ -110,7 +110,10 @@ func CountScore(uid int, rid int) (float64, error) {
 			return 0, err
 		}
 
-		sumScore += score
+		if ans == realAns {
+			sumScore += score
+
+		}
 	}
 	return sumScore, nil
 }

@@ -31,20 +31,32 @@ func UpdateSubmitTime(roomId int, studentId int) error {
 	}
 	return nil
 }
-
-func UpdateComment(roomId int, studentId int, comment string) error {
+func UpdateCommentAndScore(roomId int, studentId int, comment string, score float64) error {
 	db := global.GetDatabase()
 	if _, err := db.Exec(
 		"UPDATE user_room "+
-			"SET comment = $3 "+
+			"SET comment = $3, "+
+			"	 score = $4"+
 			"WHERE rid = $1 "+
 			"  AND uid = $2",
-		roomId, studentId, comment,
+		roomId, studentId, comment, score,
 	); err != nil {
 		return err
 	}
 	return nil
 }
+
+func GetCommentAndScore(roomId int, studentId int) (comment *string, score *float64, err error) {
+	db := global.GetDatabase()
+	if err := db.QueryRow(
+		"SELECT comment,score FROM user_room WHERE rid=$1 AND uid=$2",
+		roomId, studentId,
+	).Scan(&comment, &score); err != nil {
+		return nil, nil, err
+	}
+	return
+}
+
 func SubmitAnswer(uid int, rid int, qid int, answer string) error {
 	db := global.GetDatabase()
 	if _, err := db.Exec(
@@ -59,6 +71,46 @@ func SubmitAnswer(uid int, rid int, qid int, answer string) error {
 	return nil
 }
 
-func CountScore() {
+func CountScore(uid int, rid int) (float64, error) {
+	db := global.GetDatabase()
 
+	var pid int
+	if err := db.QueryRow("SELECT pid FROM rooms WHERE rid=$1", rid).Scan(&pid); err != nil {
+		return 0, err
+	}
+
+	cur, err := db.Query(
+		"SELECT qid,user_answer "+
+			"FROM user_answer "+
+			"WHERE uid=$1 "+
+			"  AND rid=$2 ",
+		uid, rid,
+	)
+	if err != nil {
+		return 0, err
+	}
+
+	var sumScore float64
+
+	for cur.Next() {
+		var qid int
+		var ans string
+
+		if err := cur.Scan(&qid, &ans); err != nil {
+			return 0, err
+		}
+
+		var realAns string
+		if err := db.QueryRow("SELECT answer FROM questions WHERE qid=$1", qid).Scan(&realAns); err != nil {
+			return 0, err
+		}
+
+		var score float64
+		if err := db.QueryRow("SELECT score FROM paper_question WHERE qid=$1 AND pid=$2", qid, pid).Scan(&score); err != nil {
+			return 0, err
+		}
+
+		sumScore += score
+	}
+	return sumScore, nil
 }
